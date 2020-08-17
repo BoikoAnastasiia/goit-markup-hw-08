@@ -1,0 +1,108 @@
+/*  */
+:root {
+    --title-text-color: #212121;
+    --primarily-text-color: #757575;
+    --accent-color: #2196F3;
+    --primary-white-color: #ffffff;
+  }
+
+
+  body {
+    background-color: var(--primary-white-color);
+    color: var(--primary-text-color);
+  }
+
+  .list {
+      list-style: none;
+  }
+  .logo {
+    color: var(--title-text-color);
+    text-decoration: none
+  }
+
+
+  .logo:focus {
+    color: var(--accent-color);
+  }
+
+  .highlighted {
+    color: var(--accent-color);
+  }
+
+  /* Site nav */
+
+  .site-nav .link {
+    color: var(--title-text-color);
+    text-decoration: none
+  }
+  
+  .site-nav .link:hover,
+  .site-nav .link:focus {
+    color: var(--accent-color);
+  }
+
+  .link-contacs {
+    color: var(--primarily-text-color);
+    text-decoration: none
+  }
+  
+  .link-contacs:hover,
+  .link-contacs:focus {
+    color: var(--accent-color);
+  }
+
+  /* hero */
+
+  .hero {
+background-color: #2F303A;
+color: var(--primary-white-color);
+  }
+
+  .btn-primary {
+    color: var(--primary-white-color);
+    background-color: var(--accent-color);
+    border-color: var(--accent-color);
+  }
+
+  /* traits */
+  .hidden {
+    display: none;
+  }
+
+  .traits-header {
+    color: var(--title-text-color);
+  }
+
+  .traits-desription {
+      color: var(--primarily-text-color);
+  }
+
+  /* what do we do */
+
+  .second-header {
+      color: var(--title-text-color);
+  }
+
+  /* team */
+
+  .team-names {
+      color: var(--title-text-color);
+  }
+
+  .team-description {
+      color: var(--primarily-text-color);
+  }
+
+  .logo-light {
+    color: var(--primary-white-color);
+    text-decoration: none
+  }
+
+  .footer-contacts {
+    color: var(--primarily-text-color);
+  }
+
+  .footer-contacts:hover,
+  .footer-contacts:focus {
+    color: var(--accent-color);
+  }
