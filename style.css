@@ -1,9 +1,10 @@
-/*  */
+/* main page */
 :root {
     --title-text-color: #212121;
     --primarily-text-color: #757575;
     --accent-color: #2196F3;
     --primary-white-color: #ffffff;
+    --secondary-background-color: #F5F4FA
   }
 
 
@@ -62,6 +63,7 @@ color: var(--primary-white-color);
     color: var(--primary-white-color);
     background-color: var(--accent-color);
     border-color: var(--accent-color);
+    cursor: pointer;
   }
 
   /* traits */
@@ -105,4 +107,25 @@ color: var(--primary-white-color);
   .footer-contacts:hover,
   .footer-contacts:focus {
     color: var(--accent-color);
+  }
+
+  /* portfolio page */
+  .filter-header {
+      color: var(--title-text-color);
+  }
+
+  .btn-secondary {
+    color: var(--title-text-color);
+    background-color: var(--secondary-background-color);
+    border-color: var(--secondary-background-color);
+    cursor: pointer;
+  }
+
+  .portfolio-title {
+    color: var(--title-text-color);
+  }
+
+  .portfolio-description {
+    color: var(--primarily-text-color);
+
   }
