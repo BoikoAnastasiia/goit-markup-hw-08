@@ -44,6 +44,7 @@
     font-size: 26px;
     font-weight: 700;
     letter-spacing: 0.03em;
+    margin-right: 96px;
   }
 
   .container {
@@ -90,6 +91,7 @@
   .site-nav {
     font-weight: 500;
     font-size: 14px;
+    display: flex;
   }
 
   .site-nav .link:hover,
@@ -110,12 +112,42 @@
     color: var(--accent-color);
   }
 
+  .menu-item:not(:last-child) {
+    margin-right: 50px;
+  }
+
   /* hero */
 
   .hero {
 background-color: #2F303A;
 color: var(--primary-white-color);
   }
+
+  .page-header {
+    padding-top: 32px;
+    padding-bottom: 32px;
+  }
+  
+  .page-header .flexbox {
+    justify-content: flex-end;
+    align-items: center;
+  }
+
+  .page-header .phone {
+    margin-left: 50px;
+  }
+
+  .navigation {
+    display: flex;
+    align-items: center;
+    margin-right: auto;
+  }
+
+  .section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+
 
   .hero-header {
     font-weight: 900;

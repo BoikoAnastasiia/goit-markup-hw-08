@@ -12,26 +12,28 @@
 </head>
 <body>
     <!-- Header-with-nav -->
-    <header>
+    <header  class="page-header">
 <div class="container flexbox">
         <nav class="navigation" >
             <a href="./index.html" class="logo"><span class="highlighted">Web</span>Studio </a>
 
 <ul class="site-nav list">
-    <li>
+    <li class="menu-item">
     <a href="" class=" link">Студия</a>    
     </li>
-    <li>
+    <li class="menu-item">
         <a href="./portfolio.html" class="link">Портфолио</a>
     </li>
-    <li>
+    <li class="menu-item">
         <a href="" class="link">Контакты</a>
     </li>
 </ul>
-
-    <a href="mailto:info@devstudio.com" class="link-contacs">info@devstudio.com</a>
-    <a href="tel:+380961111111" class="link-contacs">+38 096 111 11 11</a>
 </nav>
+
+<div>
+    <a href="mailto:info@devstudio.com" class="link-contacs">info@devstudio.com</a>
+    <a href="tel:+380961111111" class="link-contacs phone">+38 096 111 11 11</a>
+</div>
 </div>
     </header>
 
@@ -39,13 +41,15 @@
         
     <!-- hero -->
     <section class="hero">
+       <div class="hero-container">
         <h1 class="hero-header">Эффективные решения <br> для вашего бизнеса</h1>
         <button type="button" class="btn-primary">Заказать услугу</button> 
-        </section>
+        </div>   
+    </section>
 
     <!-- Advantages -->
    <div class="container">
-    <section>
+    <section class="section">
         <h2 class="hidden">Наши трейты</h2>
 
         <ul class="list">
@@ -71,7 +75,7 @@
 
     <!-- what we do -->
     <div class="container content-box">
-    <section>
+    <section class="section">
         <h2 class="second-header">Чем мы занимаемся</h2>
         <ul class="list">
             <li><img src="./images/box1.jpg" width="370" alt="texting"> </li>
@@ -83,7 +87,7 @@
 
     <!-- team -->
    <div class="container">
-    <section>
+    <section class="section">
         <h2 class="second-header">Наша команда</h2>
         <ul class="list">
             <li>
