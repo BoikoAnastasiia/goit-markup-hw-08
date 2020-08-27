@@ -68,6 +68,10 @@
     width: calc((100% - 30px) / 2);
   }
 
+  .content-box:not(:last-child) {
+    margin-right: 30px;
+  }
+  
   .logo:focus {
     color: var(--accent-color);
   }
