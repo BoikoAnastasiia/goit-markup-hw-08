@@ -4,7 +4,7 @@
     --primarily-text-color: #757575;
     --accent-color: #2196F3;
     --primary-white-color: #ffffff;
-    --secondary-background-color: #F5F4FA
+    --secondary-background-color: #F5F4FA;
   }
 
   html {
@@ -324,6 +324,17 @@ h4 {
   .filter-header {
       color: var(--title-text-color);
   }
+.filter .flexbox {
+  justify-content: center;
+}
+
+  .filter {
+    padding-bottom: 50px;
+  }
+
+  .filter-btn {
+    margin-right: 8px;
+  }
 
   .btn-secondary {
     color: var(--title-text-color);
@@ -336,6 +347,21 @@ h4 {
     letter-spacing: 0.03em;
     font-style: normal;
     text-decoration: none;
+    width: 145px;
+    height: 38px;
+    left: 712px;
+    top: 174px;
+    background: #F5F4FA;
+    border-radius: 4px;
+    width: auto;
+    padding-right: 22px;
+    padding-left: 22px;
+    padding-bottom: 8px;
+    padding-top: 5px;
+    box-shadow: none;
+    background: transparent;
+    border-style: solid;
+
   }
 
   .btn-secondary:hover,
@@ -343,7 +369,9 @@ h4 {
     color: var(--primary-white-color);
     background-color: var(--accent-color);
     border-color: var(--accent-color);
-  }
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+    border-radius: 4px;
+      }
 
   .portfolio-title {
     color: var(--title-text-color);
