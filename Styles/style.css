@@ -7,6 +7,21 @@
     --secondary-background-color: #F5F4FA
   }
 
+  html {
+    box-sizing: border-box;
+  }
+  
+  *,
+  *::after,
+  *::before {
+    box-sizing: inherit;
+  }
+
+  img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+  }
 
   body {
     background-color: var(--primary-white-color);
@@ -15,8 +30,12 @@
   }
 
   .list {
-      list-style: none;
+    list-style: none;
+    margin: 0;
+    padding: 0;
   }
+
+
   .logo {
     color: var(--title-text-color);
     text-decoration: none;
@@ -27,6 +46,27 @@
     letter-spacing: 0.03em;
   }
 
+  .container {
+    width: 1200px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  .flexbox {
+    display: flex;
+  }
+
+  .navigation {
+    display: flex;
+    align-items: center;
+    margin-right: auto;
+  }
+
+  .content-box {
+    width: calc((100% - 30px) / 2);
+  }
 
   .logo:focus {
     color: var(--accent-color);
