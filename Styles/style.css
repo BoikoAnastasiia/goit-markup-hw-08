@@ -386,6 +386,10 @@ h4 {
   text-decoration: none;
 }
 
+.portfolio-card:nth-child(3n) {
+  margin-right: 0;
+}
+
   .portfolio-description {
     color: var(--primarily-text-color);
     font-size: 16px;
@@ -396,15 +400,17 @@ h4 {
   }
 
   .portfolio-card {
+  box-sizing: border-box;
   width: calc((100% - 30px*2) / 3);
   background: #FFFFFF;
   border: 1px solid #EEEEEE;
-  box-sizing: border-box;
+  margin-right: 30px;
+  margin-bottom: 30px;
    }
 
-  .portfolio-card:not(:last-child) {
+  /* .portfolio-card:not(:last-child) {
     margin-right: 30px;
-  }
+  } */
 
 
   /* footer */
