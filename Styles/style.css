@@ -116,6 +116,7 @@
   .page-header {
     padding-top: 32px;
     padding-bottom: 32px;
+    border: 1px solid #ECECEC;
   }
   
   .page-header .flexbox {
@@ -326,6 +327,7 @@ h4 {
 
   .filter {
     padding-bottom: 50px;
+    padding-top: 90px;
   }
 
   .filter-btn {
@@ -377,26 +379,37 @@ h4 {
   }
 
   .portfolio-title {
+  display: inline-block;
   color: var(--title-text-color);
   font-size: 18px;
-  line-height: 26px;
+  line-height: 2;
   font-weight: 600;
   letter-spacing: 0.06em;
   font-style: normal;
   text-decoration: none;
+  padding-top: 20px;
+  padding-bottom: 4px;
+  padding-left: 24px;
 }
 
 .portfolio-card:nth-child(3n) {
   margin-right: 0;
 }
 
+.portfolio-container {
+  padding-bottom: 90px;
+}
+
   .portfolio-description {
     color: var(--primarily-text-color);
     font-size: 16px;
-    line-height: 30px;
+    line-height: 2;
     font-weight: 400;
     letter-spacing: 0.03em;
     font-style: normal;
+  padding-bottom: 20px;
+    padding-left: 24px;
+    margin: 0;
   }
 
   .portfolio-card {
