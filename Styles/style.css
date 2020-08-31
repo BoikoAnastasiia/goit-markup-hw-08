@@ -125,6 +125,7 @@
   .phone::before {
     content: "";
     background-image: url("../images/smartphone.svg");
+    background-color: red;
     background-repeat: no-repeat;
     /* background-position: left; */
     background-size: contain;
