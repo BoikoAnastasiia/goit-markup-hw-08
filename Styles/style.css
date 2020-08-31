@@ -112,6 +112,26 @@
     margin-right: 50px;
   }
 
+  .link-contacs::before {
+    content: "";
+    background-image: url("../images/envelope.svg");
+    background-repeat: no-repeat;
+    background-position: left;
+    background-size: contain;
+    width: 3px;
+    height: 12px;
+  }
+
+  .phone::before {
+    content: "";
+    background-image: url("../images/smartphone.svg");
+    background-repeat: no-repeat;
+    /* background-position: left; */
+    background-size: contain;
+    width: 10px;
+    height: 16px;
+  }
+
 
   .page-header {
     padding-top: 32px;
