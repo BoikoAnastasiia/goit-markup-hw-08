@@ -113,6 +113,7 @@
   }
 
   .link-contacs::before {
+    display: inline-flex;
     content: "";
     background-image: url("../images/envelope.svg");
     background-repeat: no-repeat;
@@ -120,12 +121,13 @@
     background-size: contain;
     width: 16px;
     height: 12px;
+    margin-right: 10px;
   }
 
   .phone::before {
+    display: inline-flex;
     content: "";
     background-image: url("../images/smartphone.svg");
-    background-color: red;
     background-repeat: no-repeat;
     background-size: contain;
     width: 10px;
@@ -169,6 +171,12 @@
 
   .hero {
     background-color: #2F303A;
+    background-image: url(../images/background_team.jpg);
+    background-image: linear-gradient (90 deg, rgba(47,48,58,0.4) rgba(47,48,58,0.4));
+    background-repeat: no-repeat;
+    /* background-size: 1600px 600px; */
+    background-size: cover;
+
     color: var(--primary-white-color);
     padding-bottom: 200px;
     padding-top: 200px;
@@ -190,7 +198,6 @@
     justify-content: center;
     flex-direction: column;
     display: flex;
-    justify-content: center;
     align-items: center;
   }
 
