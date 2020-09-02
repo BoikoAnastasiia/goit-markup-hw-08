@@ -1,0 +1,230 @@
+@font-face {
+  font-family: 'icomoon';
+  src:
+    url('fonts/icomoon.ttf?isum25') format('truetype'),
+    url('fonts/icomoon.woff?isum25') format('woff'),
+    url('fonts/icomoon.svg?isum25#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+.icon {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.anthena .path1:before {
+  content: "\e900";
+  color: rgb(33, 33, 33);
+}
+.anthena .path2:before {
+  content: "\e901";
+  margin-left: -1em;
+  color: rgb(33, 150, 243);
+}
+.astronaut .path1:before {
+  content: "\e902";
+  color: rgb(33, 150, 243);
+}
+.astronaut .path2:before {
+  content: "\e903";
+  margin-left: -1em;
+  color: rgb(33, 150, 243);
+}
+.astronaut .path3:before {
+  content: "\e904";
+  margin-left: -1em;
+  color: rgb(33, 150, 243);
+}
+.astronaut .path4:before {
+  content: "\e905";
+  margin-left: -1em;
+  color: rgb(33, 150, 243);
+}
+.astronaut .path5:before {
+  content: "\e906";
+  margin-left: -1em;
+  color: rgb(33, 150, 243);
+}
+.astronaut .path6:before {
+  content: "\e907";
+  margin-left: -1em;
+  color: rgb(33, 150, 243);
+}
+.astronaut .path7:before {
+  content: "\e908";
+  margin-left: -1em;
+  color: rgb(33, 150, 243);
+}
+.astronaut .path8:before {
+  content: "\e909";
+  margin-left: -1em;
+  color: rgb(33, 150, 243);
+}
+.astronaut .path9:before {
+  content: "\e90a";
+  margin-left: -1em;
+  color: rgb(33, 150, 243);
+}
+.astronaut .path10:before {
+  content: "\e90b";
+  margin-left: -1em;
+  color: rgb(33, 150, 243);
+}
+.astronaut .path11:before {
+  content: "\e90c";
+  margin-left: -1em;
+  color: rgb(33, 150, 243);
+}
+.astronaut .path12:before {
+  content: "\e90d";
+  margin-left: -1em;
+  color: rgb(33, 150, 243);
+}
+.astronaut .path13:before {
+  content: "\e90e";
+  margin-left: -1em;
+  color: rgb(33, 150, 243);
+}
+.astronaut .path14:before {
+  content: "\e90f";
+  margin-left: -1em;
+  color: rgb(33, 150, 243);
+}
+.astronaut .path15:before {
+  content: "\e910";
+  margin-left: -1em;
+  color: rgb(33, 150, 243);
+}
+.astronaut .path16:before {
+  content: "\e911";
+  margin-left: -1em;
+  color: rgb(33, 150, 243);
+}
+.astronaut .path17:before {
+  content: "\e912";
+  margin-left: -1em;
+  color: rgb(33, 150, 243);
+}
+.astronaut .path18:before {
+  content: "\e913";
+  margin-left: -1em;
+  color: rgb(33, 33, 33);
+}
+.astronaut .path19:before {
+  content: "\e914";
+  margin-left: -1em;
+  color: rgb(33, 33, 33);
+}
+.astronaut .path20:before {
+  content: "\e915";
+  margin-left: -1em;
+  color: rgb(33, 33, 33);
+}
+.astronaut .path21:before {
+  content: "\e916";
+  margin-left: -1em;
+  color: rgb(33, 33, 33);
+}
+.clock .path1:before {
+  content: "\e917";
+  color: rgb(33, 33, 33);
+}
+.clock .path2:before {
+  content: "\e918";
+  margin-left: -1em;
+  color: rgb(33, 150, 243);
+}
+.clock .path3:before {
+  content: "\e919";
+  margin-left: -1em;
+  color: rgb(33, 150, 243);
+}
+.clock .path4:before {
+  content: "\e91a";
+  margin-left: -1em;
+  color: rgb(33, 150, 243);
+}
+.diagram .path1:before {
+  content: "\e91b";
+  color: rgb(33, 150, 243);
+}
+.diagram .path2:before {
+  content: "\e91c";
+  margin-left: -1em;
+  color: rgb(33, 150, 243);
+}
+.diagram .path3:before {
+  content: "\e91d";
+  margin-left: -1em;
+  color: rgb(33, 150, 243);
+}
+.diagram .path4:before {
+  content: "\e91e";
+  margin-left: -1em;
+  color: rgb(33, 150, 243);
+}
+.diagram .path5:before {
+  content: "\e91f";
+  margin-left: -1em;
+  color: rgb(33, 33, 33);
+}
+.envelope:before {
+  content: "\e920";
+  color: #757575;
+}
+.facebook:before {
+  content: "\e921";
+  color: #afb1b8;
+}
+.instagram:before {
+  content: "\e922";
+  color: #afb1b8;
+}
+.linkedin:before {
+  content: "\e923";
+  color: #afb1b8;
+}
+.logo-1:before {
+  content: "\e924";
+  color: #afb1b8;
+}
+.logo-2:before {
+  content: "\e925";
+  color: #afb1b8;
+}
+.logo-3:before {
+  content: "\e926";
+  color: #afb1b8;
+}
+.logo-4:before {
+  content: "\e927";
+  color: #afb1b8;
+}
+.logo-5:before {
+  content: "\e928";
+  color: #afb1b8;
+}
+.logo-6:before {
+  content: "\e929";
+  color: #afb1b8;
+}
+.smartphone:before {
+  content: "\e92a";
+  color: #757575;
+}
+.twitter:before {
+  content: "\e92b";
+  color: #afb1b8;
+}
