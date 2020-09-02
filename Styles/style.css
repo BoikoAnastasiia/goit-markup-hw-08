@@ -136,7 +136,7 @@
   padding-bottom: 30px;
 }
 
-a.social::hover {
+.social-list:hover . {
   background-color: var(--accent-color);
   border-radius: 50%;
 }
@@ -146,6 +146,7 @@ a.social::hover {
 
 
   .link-contacs {
+  display: flex;
     color: var(--primarily-text-color);
     text-decoration: none;
     font-weight: 500;
