@@ -155,8 +155,7 @@ a.social::hover {
     flex-direction: row
   }
 
-
-  .page-header .phone {
+  .link-contacs:lastchild {
     margin-left: 50px;
   }
  
