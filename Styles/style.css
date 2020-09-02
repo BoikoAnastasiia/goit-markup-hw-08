@@ -123,22 +123,49 @@
   .site-nav .link:hover,
   .site-nav .link:focus {
     color: var(--accent-color);
-
   }
+
 .cosmo::before {
   background-image: url(../images/astronaut.svg);
 }
+
+.social {
+  align-items: center;
+  justify-content: space-around;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+a.social::hover {
+  background-color: var(--accent-color);
+  border-radius: 50%;
+}
+
+
+/* fill: var(--primary-white-color); */
+
 
   .link-contacs {
     color: var(--primarily-text-color);
     text-decoration: none;
     font-weight: 500;
     font-size: 14px;
+    display: inline-flex;
+    align-items: center;
+    flex-direction: row
   }
 
 
-
-
+  .page-header .phone {
+    margin-left: 50px;
+  }
+ 
+ 
+.icon {
+  width: 20px;
+  height: 20px;
+  fill: var (--primarily-text-color)
+}
 .highlighted {
   color: var(--accent-color);
 }
@@ -191,9 +218,6 @@
   align-items: center;
 }
 
-.page-header .phone {
-  margin-left: 50px;
-}
 
 .navigation {
   display: flex;
@@ -225,8 +249,9 @@
     color: var(--primary-white-color);
     padding-bottom: 200px;
     padding-top: 200px;
-    max-width: 1600px;
-
+    align-items: center;
+    background-position: 50% 50%;
+    
   }
 
 
@@ -241,12 +266,14 @@
   }
 
    .hero-container {
-    align-items: center;
     justify-content: center;
     flex-direction: column;
     display: flex;
     align-items: center;
-  }
+    justify-content: center;
+    padding-left: auto;
+    padding-right: auto;
+    }
 
 
 .btn-primary {
@@ -353,7 +380,7 @@ h2 {
       font-size: 16px;
       letter-spacing: 0.03em;
       line-height: 1.1;
-      padding-bottom: 30px;
+      /* padding-bottom: 30px; */
   }
 
  
