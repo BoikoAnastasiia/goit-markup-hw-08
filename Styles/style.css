@@ -136,9 +136,11 @@
   padding-bottom: 30px;
 }
 
-.social-list:hover . {
+.social-list:hover {
   background-color: var(--accent-color);
   border-radius: 50%;
+  background-size: 44px;
+  fill: red;
 }
 
 
@@ -150,7 +152,7 @@
     text-decoration: none;
     font-weight: 500;
     font-size: 14px;
-    display: inline-flex;
+    display: flex;
     align-items: center;
   }
 
@@ -164,16 +166,19 @@
     margin-left: 50px;
   }
  
-  a.link-contacs svg{
+  a.link-contacs svg {
     margin-right: 10px;
   }
 
+  .envelope {
+    align-self: initial;
+  }
 
  
 .icon {
   width: 20px;
   height: 20px;
-  fill: var (--primarily-text-color)
+  fill: currentColor;
 }
 
 .highlighted {
@@ -280,6 +285,10 @@
   }
 
    .hero-container {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    max-width: 1600px;
     justify-content: center;
     flex-direction: column;
     display: flex;
