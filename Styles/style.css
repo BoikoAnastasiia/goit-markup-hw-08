@@ -150,7 +150,9 @@
     text-decoration: none;
     font-weight: 500;
     font-size: 14px;
-      }
+    display: inline-flex;
+    align-items: center;
+  }
 
   .contacts-upper {
     display: flex;
@@ -205,7 +207,7 @@
   font-size: 14px;
 }
 
-.link-contacs svg {
+.link-contacs .svg:hover {
   fill: red;
 }
 
