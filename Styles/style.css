@@ -146,26 +146,34 @@
 
 
   .link-contacs {
-  display: flex;
     color: var(--primarily-text-color);
     text-decoration: none;
     font-weight: 500;
     font-size: 14px;
-    display: inline-flex;
+      }
+
+  .contacts-upper {
+    display: flex;
     align-items: center;
-    flex-direction: row
+    align-content: space-between;
   }
 
-  .link-contacs:lastchild {
+  .link-contacs:last-child {
     margin-left: 50px;
   }
  
+  a.link-contacs svg{
+    margin-right: 10px;
+  }
+
+
  
 .icon {
   width: 20px;
   height: 20px;
   fill: var (--primarily-text-color)
 }
+
 .highlighted {
   color: var(--accent-color);
 }
@@ -195,6 +203,10 @@
   text-decoration: none;
   font-weight: 500;
   font-size: 14px;
+}
+
+.link-contacs svg {
+  fill: red;
 }
 
 .link-contacs:hover,
