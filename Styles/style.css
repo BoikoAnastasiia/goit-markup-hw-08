@@ -65,6 +65,16 @@
   margin-right: auto;
 }
 
+.icons-header {
+  padding: 0;
+  border: none;
+}
+
+.header-icons {
+  fill: var(--primarily-text-color);
+  display: inline;
+}
+
 .trait-list:not(:last-child) {
   margin-right: 30px;
   }
