@@ -83,6 +83,62 @@
   color: var(--accent-color);
 }
 
+.traits::before {
+  display: block;
+  content: "";
+  height: 120px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: #F5F4FA;
+  background-size: 70px;
+}
+
+  .highlighted {
+    color: var(--accent-color);
+  }
+.anthena::before {
+  background-image: url(../images/Anthena.svg);
+}
+
+  /* Site nav */
+.clock::before {
+  background-image: url(../images/clock.svg);
+}
+
+  .site-nav .link {
+    color: var(--title-text-color);
+    text-decoration: none
+  }
+
+  .site-nav {
+    font-weight: 500;
+    font-size: 14px;
+    display: flex;
+  }
+.planing::before {
+  background-image: url(../images/diagram.svg);
+}
+
+  .site-nav .link:hover,
+  .site-nav .link:focus {
+    color: var(--accent-color);
+
+  }
+.cosmo::before {
+  background-image: url(../images/astronaut.svg);
+}
+
+  .link-contacs {
+    color: var(--primarily-text-color);
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 14px;
+  }
+
+
+
+
 .highlighted {
   color: var(--accent-color);
 }
