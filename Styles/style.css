@@ -171,8 +171,17 @@
   }
 
   .envelope {
-    align-self: initial;
+    fill: currentColor;
+    width: 16px; 
+    height: 12px;
   }
+
+  .smartphone {
+    width: 10px; 
+    height: 16px;
+    fill: currentColor;
+  }
+
 .current {
   color: var (--accent-color);
 }
@@ -181,6 +190,13 @@
   width: 20px;
   height: 20px;
   fill: currentColor;
+}
+
+.link-contacs:hover .smartphone,
+.link-contacs:focus .smartphone, 
+.link-contacs:hover .envelope,
+.link-contacs:focus .envelope {
+  fill: darkcyan;
 }
 
 .highlighted {
