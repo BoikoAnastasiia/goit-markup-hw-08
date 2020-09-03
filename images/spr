@@ -1,18 +1,47 @@
 <svg class="icon">
-  <use href="#smartphone"></use>
+  <use xlink:href="#envelope"></use>
 </svg>
+
 <svg class="icon">
-  <use href="#twitter"></use>
+  <use xlink:href="#facebook"></use>
 </svg>
+
 <svg class="icon">
-  <use href="#envelope"></use>
+  <use xlink:href="#instagram"></use>
 </svg>
+
 <svg class="icon">
-  <use href="#facebook"></use>
+  <use xlink:href="#linkedin"></use>
 </svg>
+
 <svg class="icon">
-  <use href="#instagram"></use>
+  <use xlink:href="#logo-1"></use>
 </svg>
+
 <svg class="icon">
-  <use href="#linkedin"></use>
+  <use xlink:href="#logo2"></use>
+</svg>
+
+<svg class="icon">
+  <use xlink:href="#logo-3"></use>
+</svg>
+
+<svg class="icon">
+  <use xlink:href="#logo-4"></use>
+</svg>
+
+<svg class="icon">
+  <use xlink:href="#logo-5"></use>
+</svg>
+
+<svg class="icon">
+  <use xlink:href="#logo-6"></use>
+</svg>
+
+<svg class="icon">
+  <use xlink:href="#smartphone"></use>
+</svg>
+
+<svg class="icon">
+  <use xlink:href="#twitter"></use>
 </svg>

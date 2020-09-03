@@ -416,6 +416,23 @@ a.link-contacs svg {
   /* padding-bottom: 30px; */
 }
 
+/* partners */
+.partner {
+  fill: #AFB1B8;
+}
+
+.partners-list {
+  justify-content: space-between;
+}
+
+.logo-partner {
+  width: 2493px;
+  height: 90px;
+  border: 1px solid #AFB1B8;
+  box-sizing: border-box;
+  border-radius: 4px;
+}
+
 /* footer */
 
 .footer {
