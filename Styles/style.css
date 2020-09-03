@@ -110,6 +110,11 @@ h2 {
   color: var(--accent-color);
 }
 
+.link {
+  color: var(--title-text-color);
+  text-decoration: none
+}
+
 .contacts-upper {
   display: flex;
   align-items: center;
@@ -143,8 +148,8 @@ a.link-contacs svg {
   fill: var(--accent-color);
 }
 
-.site.nav .current {
-  color: var (--accent-color);
+.current {
+  color: var(--accent-color);
 }
 
 .site-nav .link:hover,
@@ -357,7 +362,16 @@ a.link-contacs svg {
 .social-link:hover {
   background-color: var(--accent-color);
   border-radius: 50%;
-  background-size: 88px;
+  background-size: 88px 88px;
+}
+
+.social-link {
+  display: flex;
+  margin: 0;
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
 }
 
 .social-link .icon:hover {
@@ -435,6 +449,18 @@ a.link-contacs svg {
 .footer-contacts:hover,
 .footer-contacts:focus {
   color: var(--accent-color);
+}
+
+.logo-light {
+  color: var(--primary-white-color);
+  text-decoration: none;
+  font-family: 'Raleway', sans-serif;
+  text-decoration: none;
+  font-size: 26px;
+  font-weight: 700;
+  letter-spacing: 0.03em;
+  display: inline-block;
+  margin-bottom: 20px;
 }
 
   /* portfolio page */
