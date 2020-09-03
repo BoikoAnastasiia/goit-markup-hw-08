@@ -196,7 +196,7 @@
 .link-contacs:focus .smartphone, 
 .link-contacs:hover .envelope,
 .link-contacs:focus .envelope {
-  color: var(--accent-color);
+  fill: var(--accent-color);
 }
 
 .highlighted {
