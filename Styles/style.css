@@ -378,8 +378,9 @@ a.link-contacs svg {
 .social-link:hover {
   background-color: var(--accent-color);
 }
+
 .social-link:hover .icon {
-fill: var(--primary-white-color);
+  fill: var(--primary-white-color);
 }
 
 .social-link {
