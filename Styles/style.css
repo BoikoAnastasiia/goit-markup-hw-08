@@ -335,7 +335,9 @@ a.link-contacs svg {
   margin-bottom: -10px; */
 }
 
-.fifty {
+.container .list-cards,
+.container .partners-list,
+.container .wedo {
   margin-top: 50px;
 }
 
@@ -356,14 +358,7 @@ a.link-contacs svg {
   fill: #AFB1B8;
 }
 
-.social-web {
-margin: 0;
-width: 100%;
-height: 100%;
-border-radius: 50%;
-justify-content: center;
-align-items: center;
-}
+
 
 .list-cards .social-list {
   width: 44px;
@@ -379,7 +374,7 @@ align-items: center;
   padding-left: 32px;
 }
 
-.social .social-link:hover {
+.social-link:hover .icon {
   background-color: var(--accent-color);
   fill: var(--primary-white-color);
 }
@@ -391,6 +386,7 @@ align-items: center;
   height: 100%;
   justify-content: center;
   align-items: center;
+  border-radius: 50%;
 }
 
 .link-contacs {
@@ -485,10 +481,20 @@ align-items: center;
   margin-right: 0px;
 }
 
-.logo-link:hover {
+/* .logo-link:hover .partner-list {
   border: 1px solid var(--accent-color);
   cursor: pointer;
   fill: var(--accent-color);
+} */
+
+.logo-link:hover svg {
+  cursor: pointer;
+  fill: var(--accent-color);
+}
+
+.partner-list:hover {
+  border: 1px solid var(--accent-color);
+  border-radius: 4px;
 }
 
 .logo-link {
