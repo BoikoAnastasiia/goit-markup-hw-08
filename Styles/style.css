@@ -379,10 +379,9 @@ align-items: center;
   padding-left: 32px;
 }
 
-.social-link:hover {
+.social .social-link:hover {
   background-color: var(--accent-color);
-  border-radius: 50%;
-  background-size: 88px 88px;
+  fill: var(--primary-white-color);
 }
 
 .social-link {
@@ -393,10 +392,6 @@ align-items: center;
   justify-content: center;
   align-items: center;
 }
-
-.social-link .icon:hover {
-  fill: var(--primary-white-color);
-} 
 
 .link-contacs {
   color: var(--primarily-text-color);
