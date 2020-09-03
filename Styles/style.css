@@ -106,11 +106,6 @@
   background-image: url(../images/clock.svg);
 }
 
-  .site-nav .link {
-    color: var(--title-text-color);
-    text-decoration: none
-  }
-
   .site-nav {
     font-weight: 500;
     font-size: 14px;
@@ -182,9 +177,6 @@
     fill: currentColor;
   }
 
-.current {
-  color: var (--accent-color);
-}
  
 .icon {
   width: 20px;
@@ -205,22 +197,22 @@
 
 /* Site nav */
 
-.site-nav .link {
-  color: var(--title-text-color);
-  text-decoration: none
-}
-
 .site-nav {
   font-weight: 500;
   font-size: 14px;
   display: flex;
+  color: var(--title-text-color);
+  text-decoration: none
+}
+
+.site.nav .current {
+  color: var (--accent-color);
 }
 
 .site-nav .link:hover,
 .site-nav .link:focus {
   color: var(--accent-color);
-  
-}
+  }
 
 .link-contacs {
   display: inline;
