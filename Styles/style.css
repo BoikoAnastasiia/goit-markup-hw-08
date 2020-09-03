@@ -173,7 +173,9 @@
   .envelope {
     align-self: initial;
   }
-
+.current {
+  color: var (--accent-color);
+}
  
 .icon {
   width: 20px;
