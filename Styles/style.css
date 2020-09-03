@@ -365,6 +365,11 @@ justify-content: center;
 align-items: center;
 }
 
+.list-cards .social-list {
+  width: 44px;
+  height: 44px;
+}
+
 .social {
   align-items: center;
   justify-content: space-around;
