@@ -415,8 +415,7 @@ a.link-contacs svg {
 }
 
 /* partners */
-.partner {
-}
+
 
 .partners-list {
   box-sizing: border-box;
@@ -424,9 +423,39 @@ a.link-contacs svg {
   justify-content: space-between;
 }
 
-.logo-1 {
+.logo-one {
   width: 44px; 
   height: 49px;
+  fill: currentColor;
+}
+
+.logo-two {
+  width: 40px; 
+  height: 52px;
+  fill: currentColor;
+}
+
+.logo-three {
+  width: 41px; 
+  height: 43px;
+  fill: currentColor;
+}
+
+.logo-four {
+  width: 80px; 
+  height: 42px;
+  fill: currentColor;
+}
+
+.logo-five {
+  width: 59px; 
+  height: 47px;
+  fill: currentColor;
+}
+
+.logo-six {
+  width: 88px; 
+  height: 45px;
   fill: currentColor;
 }
 
@@ -440,10 +469,6 @@ a.link-contacs svg {
   margin-right: 0px;
 }
 
-/* .logo-link {
-  display: flex;
-} */
-
 .logo-link:hover {
   border: 1px solid var(--accent-color);
   cursor: pointer;
@@ -455,6 +480,7 @@ a.link-contacs svg {
   margin: 0;
   width: 100%;
   height: 100%;
+  color: #AFB1B8;
   border: 1px solid #AFB1B8;;
   border-radius: 4px;
   justify-content: center;
