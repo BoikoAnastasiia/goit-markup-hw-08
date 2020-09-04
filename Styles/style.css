@@ -496,10 +496,11 @@ a.link-contacs svg {
   fill: var(--accent-color);
 }
 
-.partner-list:hover {
+.logo-link:hover {
   border: 1px solid var(--accent-color);
   border-radius: 4px;
 }
+
 
 .logo-link {
   display: flex;
@@ -534,6 +535,11 @@ a.link-contacs svg {
   text-decoration: none;
   margin-top: 9px;
 }
+
+.footer-social .icon {
+  fill: var(--primary-white-color);
+}
+
 
 .footer-address {
   color: var(--primary-white-color);
@@ -641,15 +647,12 @@ justify-content: center;
   height: 38px;
   left: 712px;
   top: 174px;
-  background: #F5F4FA;
   border-radius: 4px;
-  width: auto;
   padding-right: 22px;
   padding-left: 22px;
   padding-bottom: 8px;
   padding-top: 5px;
   box-shadow: none;
-  background: transparent;
   border-style: solid;
 }
 
