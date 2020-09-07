@@ -102,7 +102,9 @@ h2 {
   font-size: 14px;
   display: flex;
   color: var(--title-text-color);
-  text-decoration: none
+  text-decoration: none;
+
+  position: relative;
 }
 
 .site-nav .link:hover,
@@ -150,6 +152,16 @@ a.link-contacs svg {
 
 .current {
   color: var(--accent-color);
+ 
+}
+
+.link .current:hover::after {
+  bottom: 0;
+  width: 48px;
+  height: 4px;
+  background: #2196F3;
+  border-radius: 2px;
+  position: absolute;
 }
 
 .site-nav .link:hover,
