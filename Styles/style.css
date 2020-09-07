@@ -350,9 +350,9 @@ a.link-contacs svg {
   align-content: space-between;
 }
 
-/* .overlay {
+.overlay {
   position: relative;
-} */
+}
 
 .wedo .li:nth-child(-n + 2) {
   margin-right: 30px;
