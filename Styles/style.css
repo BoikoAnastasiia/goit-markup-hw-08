@@ -359,13 +359,11 @@ a.link-contacs svg {
 }
 
 .overlay-text {
-  display: flex;
-  align-items: center;
   width: 100%;
   background: rgba(47, 48, 58, 0.8);
   height: 70px;
   position: absolute;
-  
+  padding-top: 27px;
   left: 0;
   bottom: 0;
   margin: 0;
