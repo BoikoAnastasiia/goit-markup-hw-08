@@ -157,15 +157,17 @@ a.link-contacs svg {
 }
 
 .current::after  {
-  bottom: -34px;
-  left: 0;
+  bottom: -36px; 
+  /* left: 0;  */
   content: "";
   width: 48px;
   height: 4px;
   background: var(--accent-color);
   border-radius: 2px;
-  position: relative;
-  display: block;
+  position: absolute;
+
+  /* transform: translate(-50%, -50%); */
+  display: flex;
 }
 
 .site-nav .link:hover,
