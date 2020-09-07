@@ -157,7 +157,7 @@ a.link-contacs svg {
 }
 
 .current::after  {
-  bottom: -36px; 
+  bottom: -39px; 
   /* left: 0;  */
   content: "";
   width: 48px;
