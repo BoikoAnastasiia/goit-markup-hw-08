@@ -152,15 +152,16 @@ a.link-contacs svg {
 
 .current {
   color: var(--accent-color);
- 
+  display: block;
 }
 
 .current::after {
   bottom: 0;
   left: 0;
+  content: "";
   width: 48px;
   height: 4px;
-  background: #2196F3;
+  background: var(--accent-color);
   border-radius: 2px;
   position: absolute;
 }
