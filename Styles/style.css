@@ -346,8 +346,16 @@ a.link-contacs svg {
   text-align: center;
 }
 
-.overlay {
+.wedo {
+  align-content: space-between;
+}
+
+/* .overlay {
   position: relative;
+} */
+
+.wedo .li:nth-child(-n + 2) {
+  margin-right: 30px;
 }
 
 .overlay-text {
@@ -380,6 +388,14 @@ a.link-contacs svg {
 .container .wedo {
   margin-top: 50px;
 }
+
+/* .test {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 35px;
+  color: red;
+  display: block;
+} */
 
   /* team */
 .centered {
