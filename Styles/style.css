@@ -87,6 +87,7 @@ h2 {
   display: flex;
   align-items: center;
   margin-right: auto;
+
 }
   
 .logo:focus {
@@ -156,14 +157,14 @@ a.link-contacs svg {
 }
 
 .current::after  {
-  bottom: 0;
+  bottom: -34px;
   left: 0;
   content: "";
   width: 48px;
   height: 4px;
   background: var(--accent-color);
   border-radius: 2px;
-  position: absolute;
+  position: relative;
   display: block;
 }
 
@@ -189,6 +190,10 @@ a.link-contacs svg {
   color: var(--accent-color);
 }
 
+.menu-item {
+  position: relative;
+}
+
 .menu-item:not(:last-child) {
   margin-right: 50px;
 }
@@ -197,7 +202,7 @@ a.link-contacs svg {
   padding-top: 32px;
   padding-bottom: 32px;
   border: 1px solid #ECECEC;
-  position: relative;
+  /* position: absolute; */
 
 }
 
@@ -279,7 +284,6 @@ a.link-contacs svg {
 .hero-button {
   padding-bottom: 200px;
   margin: 0;
-  position: absolute;
   top: 50%;
   left: 50%;
   -ms-transform: translate(-50%, -50%);
