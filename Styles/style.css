@@ -354,17 +354,21 @@ a.link-contacs svg {
   position: relative;
 }
 
-.wedo .li:nth-child(-n + 2) {
+.wedo li:nth-child(-n + 2) {
   margin-right: 30px;
 }
 
 .overlay-text {
+  display: flex;
+  align-items: center;
   width: 100%;
   background: rgba(47, 48, 58, 0.8);
   height: 70px;
   position: absolute;
+  
   left: 0;
   bottom: 0;
+  margin: 0;
 
   font-style: normal;
   font-weight: 700;
