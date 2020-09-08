@@ -29,8 +29,7 @@
             </li>
         </ul>
         </nav>
-        
-        <div class="contacts-upper">
+                <div class="contacts-upper">
             
             <a href="mailto:info@devstudio.com" class="link-contacs">
                 <svg class="envelope">
@@ -46,14 +45,15 @@
         
 
     <main>
-        
+    
     <!-- hero -->
     <section>
        <div class="hero-container hero">
         <h1 class="hero-header">Эффективные решения <br> для вашего бизнеса</h1>
-        <button type="button" class="btn-primary">Заказать услугу</button> 
+        <button class="btn-primary" data-modal-open>Заказать услугу</button> 
         </div>   
     </section>
+
 
     <!-- Advantages -->
     <section class="nopadding">
@@ -82,8 +82,6 @@
     </div>
     </section class="section">
     <!-- <section>
-<h1 class="test">Хммммм</h1>
-</section> -->
 
     <!-- what we do -->
     <section class="section">
@@ -96,17 +94,18 @@
                 <img src="./images/box1.jpg" width="370" alt="texting"> 
                 <p class="overlay-text">Десктопные приложения</p>
             </div>
+        </li>
 
-                </li>
+            <li>
                 <div class="trait-list overlay">
-                    <li class="trait-list"><img src="./images/box2.jpg" width="370" alt="collation">
-                <p class="overlay-text">Десктопные приложения</p>
-
-            </li></div>
-            <div class="trait-list overlay">
-
-            <li class="trait-list"><img src="./images/box3.jpg" width="370" alt="choosing palette">
-                <p class="overlay-text">Десктопные приложения</p> </div>
+                <img src="./images/box2.jpg" width="370" alt="collation">
+                <p class="overlay-text">Мобильные приложения</p>
+        </div>
+            </li>
+            <li>
+                <div class="trait-list overlay">
+                <img src="./images/box3.jpg" width="370" alt="choosing palette">
+                <p class="overlay-text">Дизайнерские решения</p> </div>
             </li>
         </ul>
     </div>
@@ -116,31 +115,31 @@
     <!-- team -->
     <section class="team-back section">
         <div class="container centered">
-        <h2 class="second-header">Наша команда</h2>
-        <ul class="list flexbox list-cards" >
-            <li class=" team-card trait-list">
-                <img src="./images/igor.jpg" width="270" alt="Igor Demyanenko photo">
-                <h4 class="team-names">Игорь Демьяненко</h4>
-                <span class="team-description">Product Designer</span>
-        <ul class="list flexbox social">
-        <li class="social-list"><a class="social-link" href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer" aria-label="Instagram address">
-            <svg class="icon"> <use href="./images/sprite.svg#instagram"></use></svg>
-        </a>
-        </li>
-        <li class="social-list"><a class="social-link" href="https://twitter.com/home" target="_blank" rel="noopener noreferrer"  aria-label="Twitter address">
-            <svg class="icon"> <use href="./images/sprite.svg#twitter"></use></svg>
-        </a>
-       </li>
-       <li class="social-list">
-            <a class="social-link" href="https://www.facebook.com/">
-            <svg class="icon"> <use href="./images/sprite.svg#facebook" target="_blank" rel="noopener noreferrer" aria-label="Facebook address"></use></svg>
-        </a>
+            <h2 class="second-header">Наша команда</h2>
+            <ul class="list flexbox list-cards" >
+                <li class=" team-card trait-list">
+                    <img src="./images/igor.jpg" width="270" alt="Igor Demyanenko photo">
+                    <h4 class="team-names">Игорь Демьяненко</h4>
+                    <span class="team-description">Product Designer</span>
+            <ul class="list flexbox social">
+            <li class="social-list"><a class="social-link" href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer" aria-label="Instagram address">
+                <svg class="icon"> <use href="./images/sprite.svg#instagram"></use></svg>
+            </a>
+            </li>
+            <li class="social-list"><a class="social-link" href="https://twitter.com/home" target="_blank" rel="noopener noreferrer"  aria-label="Twitter address">
+                <svg class="icon"> <use href="./images/sprite.svg#twitter"></use></svg>
+            </a>
         </li>
         <li class="social-list">
-            <a class="social-link" href="https://www.linkedin.com/">
-            <svg class="icon"> <use href="./images/sprite.svg#linkedin" target="_blank" rel="noopener noreferrer" aria-label="Linkedin address"></use></svg>
-        </a></li>
-    </ul>
+                <a class="social-link" href="https://www.facebook.com/">
+                <svg class="icon"> <use href="./images/sprite.svg#facebook" target="_blank" rel="noopener noreferrer" aria-label="Facebook address"></use></svg>
+            </a>
+            </li>
+            <li class="social-list">
+                <a class="social-link" href="https://www.linkedin.com/">
+                <svg class="icon"> <use href="./images/sprite.svg#linkedin" target="_blank" rel="noopener noreferrer" aria-label="Linkedin address"></use></svg>
+            </a></li>
+        </ul>
             </li>
                     <li class=" team-card trait-list">
                         <img src="./images/olga.jpg" width="270" alt="Olga Repina photo">
@@ -309,5 +308,19 @@
     </section>
     </div>
     </footer>
+
+    
+    
+        <!-- backdrop -->
+        <div class="backdrop is-hidden" data-modal>
+            <div class="modal">
+        <button data-modal-close>
+            <svg class="close"> <use href="./images/close.svg"></use></svg>
+        </button>
+
+            </div>
+        </div>
+
+    <script src="./modal.js"></script>
 </body>
 </html> 
