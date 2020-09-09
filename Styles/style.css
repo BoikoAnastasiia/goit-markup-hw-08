@@ -805,6 +805,7 @@ justify-content: center;
   overflow: hidden;
 }
 
+
 .card-thumb {
   position: relative;
 }
@@ -823,7 +824,6 @@ justify-content: center;
   opacity: 0;
   transform: translateY(100%);
   transition: transform 250ms var(--timing);
-  z-index: 1;
 }
 
 
@@ -844,7 +844,7 @@ justify-content: center;
   top: 0;
   padding: 63px 24px;
 
-  transform: translateY(-30%);
+  transform: translateY(100%);
   transition: transform 250ms var(--timing);
 }
 
