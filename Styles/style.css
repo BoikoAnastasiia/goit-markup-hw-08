@@ -310,6 +310,8 @@ background-color: #45A5F1;
   width: 100%;
   height: 100%;
   background: rgba(0, 0, 0, 0.2);
+  opacity: 1;
+  transition: opacity 1000ms var(--timing);
 }
 
 .backdrop.is-hidden {
@@ -317,28 +319,41 @@ background-color: #45A5F1;
   pointer-events: none;
 }
 
-.close {
-  width: 18px;
-  height: 18px;
-  position: absolute; 
-  right: -50px;
-  top: 0;
-  fill: currentColor;
-}
-
 .modal {
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
-
   min-height: 581px;
   min-width: 528px;
   padding: 15px;
-
   background: #FFFFFF;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
-  border-radius: 4px;}
+  border-radius: 4px;
+
+  opacity: 1;
+  transform: translate(-50%, -50%) scale(1);
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1) 0s, transform 250ms cubic-bezier(0.4, 0, 0.2, 1) 0s;
+}
+
+.backdrop.is-hidden .modal {
+  transform: translate(-50%, -50%) scale(0.7);
+}
+
+.modal-btn {
+  position: absolute;
+  background-image: url(../images/close.svg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 30px;
+  height: 30px;
+  position: absolute; 
+  right: 8px;
+  top: 8px;
+  background: #FFFFFF;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 50%;
+}
 
   /* traits */
 
@@ -809,9 +824,10 @@ justify-content: center;
   overflow: hidden;
 }
 
-
 .card-thumb {
   position: relative;
+  overflow: hidden;
+
 }
 
 .card-thumb::before {
