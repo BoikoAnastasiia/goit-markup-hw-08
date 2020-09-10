@@ -109,17 +109,21 @@ button:focus {
   display: flex;
   color: var(--title-text-color);
   text-decoration: none;
+  transition: 250ms var(--timing);
+
 }
 
 
 .site-nav .link:hover,
 .site-nav .link:focus {
   color: var(--accent-color);
+  
 }
 
 .link {
   color: var(--title-text-color);
-  text-decoration: none
+  text-decoration: none;
+  transition: 250ms var(--timing);
 }
 
 .contacts-upper {
@@ -134,6 +138,7 @@ button:focus {
 
 a.link-contacs svg {
   margin-right: 10px;
+  transition: 250ms var(--timing);
 }
 
 .envelope {
@@ -185,6 +190,8 @@ a.link-contacs svg {
   text-decoration: none;
   font-weight: 500;
   font-size: 14px;
+  transition: 250ms var(--timing);
+
 }
 
 .link-contacs .svg:hover {
@@ -280,7 +287,7 @@ a.link-contacs svg {
   height: 50px;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 250ms var(--timing);
 }
 
 button, select {
@@ -290,7 +297,7 @@ button, select {
 
 .btn-primary:hover,
 .btn-primery:focus {
-background-color: #45A5F1;
+background-color: var(--accent-color);
 }
 
 .hero-button {
@@ -516,7 +523,8 @@ background-color: #45A5F1;
   justify-content: center;
   align-items: center;
   border-radius: 50%;
-  }
+  transition: 550ms var(--timing);
+}
 
 .link-contacs {
   color: var(--primarily-text-color);
@@ -632,6 +640,12 @@ background-color: #45A5F1;
   border-radius: 4px;
   justify-content: center;
   align-items: center;
+  transition: 250ms var(--timing);
+}
+
+
+.logo-link svg {
+transition: 450ms var(--timing);
 }
 
 
@@ -724,6 +738,8 @@ h5 {
   align-items: center;
   border-radius: 50%;
   background-color: rgba(255, 255, 255, 0.1);
+  transition: 450ms var(--timing);
+  
 }
 
 .footer-social {
@@ -770,6 +786,7 @@ justify-content: center;
   padding-top: 5px;
   box-shadow: none;
   border-style: solid;
+  transition: 450ms var(--timing);
 }
 
 .btn-secondary:hover,
