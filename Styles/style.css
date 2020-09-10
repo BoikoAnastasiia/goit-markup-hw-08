@@ -341,13 +341,13 @@ background-color: #45A5F1;
 
 .modal-btn {
   position: absolute;
+  background-color: red;
   background-image: url(../images/close.svg);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   width: 30px;
   height: 30px;
-  position: absolute; 
   right: 8px;
   top: 8px;
   background: #FFFFFF;
