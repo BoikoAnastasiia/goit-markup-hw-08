@@ -343,11 +343,76 @@ background-color: var(--accent-color);
   opacity: 1;
   transform: translate(-50%, -50%) scale(1);
   transition: opacity 250ms var(--timing) 0s, transform 250ms var(--timing) 0s;
+  padding: 40px;
+}
+
+.modal-blocks {
+  margin-bottom: 30px;
+}
+
+.modal-blocks label {
+font-style: normal;
+font-weight: 500;
+font-size: 12px;
+line-height: 14px;
+letter-spacing: 0.01em;
+color: var(--primarily-text-color);
+}
+
+.modal-blocks input {
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  box-sizing: border-box;
+  border-radius: 4px;
+}
+
+.agreement-text .btn-primary {
+  margin-top: 30px;
 }
 
 .backdrop.is-hidden .modal {
   transform: translate(-50%, -50%) scale(0.7);
 }
+textarea {
+  resize: none;
+  width: 448px;
+  height: 120px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  box-sizing: border-box;
+  border-radius: 4px;
+}
+.agreement {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.7em;
+  letter-spacing: 0.03em;
+  text-decoration-line: underline;
+  color: var(--accent-color);
+}
+
+.agreement-text {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.7em;
+  letter-spacing: 0.03em;
+  color: var(--primarily-text-color);
+  text-align: center;
+}
+
+.modal-header {
+font-style: normal;
+font-weight: 700;
+font-size: 20px;
+line-height: 23px;
+text-align: center;
+letter-spacing: 0.03em;
+text-transform: none;
+color: #212121;
+margin-bottom: 30px;
+}
+
+
 
 .modal-btn {
   display: inline-flex;

@@ -331,9 +331,39 @@
         <!-- backdrop -->
         <div class="backdrop is-hidden" data-modal>
             <div class="modal">
-        <button class="modal-btn" data-modal-close>
-            </button>
+                <button class="modal-btn" data-modal-close></button>
+                <h5 class="modal-header">Оставьте свои данные, мы вам перезвоним</h5>
+                <form >
+                   <div class="modal-blocks"> <label for="name">Имя</label>
+                    <input  
+                    type="text"
+                    name="name"
+                    id="name"> </div>
+               
+                    <div class="modal-blocks"><label for="tel">Телефон</label>
+                    <input  
+                    type="tel"
+                    name="tel"
+                    id="tel">
+                </div>
+        
+               <div class="modal-blocks">
+                    <label for="email">Почта</label>
+                    <input  
+                    type="email"
+                    name="mail"
+                    id="mail">
+                </div>
+              
+                <div class="modal-blocks">   
+                    <label for="comment">Комментарий</label>
+               <textarea name="comment" id="comment" rows="10" placeholder="Введите текст"></textarea> </div> 
 
+               <div class="agreement-text">   
+
+           <label for="agreement">Соглашаюсь с рассылкой и <a href=""  class="agreement" >принимаю Условия договора</a></label> 
+           <button class="btn-primary">Отправить</button> 
+            </form>
             </div>
         </div>
 
