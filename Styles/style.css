@@ -274,6 +274,9 @@ a.link-contacs svg {
 }
 
 .btn-primary {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
   box-sizing: border-box;
   color: var(--primary-white-color);
   background-color: var(--accent-color);
@@ -770,7 +773,9 @@ h5 {
   margin-top: 20px;
 }
 .subscribe-form .btn-primary::after {
+  display: inline-block;
   background-image: url(../images/send.svg);
+  align-items: center;
   width: 24px;
   height: 24px;
   content: "";
