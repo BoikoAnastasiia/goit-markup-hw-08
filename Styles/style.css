@@ -348,9 +348,10 @@ background-color: var(--accent-color);
 
 .modal-blocks {
   margin-bottom: 30px;
+  position: relative;
 }
 
-.modal-blocks label {
+.form-label {
 font-style: normal;
 font-weight: 500;
 font-size: 12px;
@@ -359,10 +360,12 @@ letter-spacing: 0.01em;
 color: var(--primarily-text-color);
 }
 
-.modal-blocks input {
+.form-input {
   border: 1px solid rgba(33, 33, 33, 0.2);
   box-sizing: border-box;
   border-radius: 4px;
+  width: 448px;
+  height: 40px;
 }
 
 .agreement-text .btn-primary {

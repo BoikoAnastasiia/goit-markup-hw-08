@@ -1,0 +1,9 @@
+<svg class="icon">
+  <use xlink:href="#close"></use>
+</svg><svg class="icon">
+  <use xlink:href="#email-black"></use>
+</svg><svg class="icon">
+  <use xlink:href="#person"></use>
+</svg><svg class="icon">
+  <use xlink:href="#phone"></use>
+</svg>
