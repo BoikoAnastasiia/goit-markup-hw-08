@@ -358,6 +358,10 @@ font-size: 12px;
 line-height: 14px;
 letter-spacing: 0.01em;
 color: var(--primarily-text-color);
+
+position: absolute;
+top: -16px ;
+left: 0;
 }
 
 .form-input {
@@ -366,6 +370,13 @@ color: var(--primarily-text-color);
   border-radius: 4px;
   width: 448px;
   height: 40px;
+}
+
+.form-input:focus, 
+textarea:focus {
+  border: solid 1px var(--accent-color);
+  border-radius: 4px;
+  outline: none;
 }
 
 .agreement-text .btn-primary {
