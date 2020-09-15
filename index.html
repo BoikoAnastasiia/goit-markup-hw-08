@@ -297,7 +297,8 @@
                 </li>
                 <li class="social-list">
                     <a class="follow-link flex" href="https://www.linkedin.com/">
-                    <svg class="icon"> <use href="./images/sprite.svg#linkedin" target="_blank" rel="noopener noreferrer" aria-label="Linkedin address"></use></svg>
+                    <svg class="icon"> <use href="./images/sprite.svg#linkedin" 
+                        target="_blank" rel="noopener noreferrer" aria-label="Linkedin address"></use></svg>
                 </a></li>
             </ul>
             
@@ -333,26 +334,33 @@
             <div class="modal">
                 <button class="modal-btn" data-modal-close></button>
                 <h5 class="modal-header">Оставьте свои данные, мы вам перезвоним</h5>
-                <form >
-                   <div class="modal-blocks"> <label  class="form-label" for="name">Имя</label>
+                <form autocomplete="off" >
+                   <div class="modal-blocks"> 
                     <input class="form-input" 
                     type="text"
                     name="name"
-                    id="name"> </div>
+                    id="name" placeholder=" ">     
+                    <label  class="form-label" for="name">Имя 
+                        <svg class="icon"> <use href="./images/mo" 
+                        target="_blank" rel="noopener noreferrer" aria-label="Linkedin address"></use></svg></label>
+                    </div>
                
-                    <div class="modal-blocks"><label  class="form-label" for="tel">Телефон</label>
-                    <input class="form-input" 
-                    type="tel"
-                    name="tel"
-                    id="tel">
+                    <div class="modal-blocks">
+                        <input class="form-input" 
+                        type="tel"
+                        name="tel"
+                        id="tel" placeholder=" ">
+                        <label  class="form-label" for="tel">Телефон</label>
+                       
                 </div>
         
                <div class="modal-blocks">
-                    <label  class="form-label" for="email">Почта</label>
-                    <input class="form-input" 
-                    type="email"
-                    name="mail"
-                    id="mail">
+                <input class="form-input" 
+                type="email"
+                name="mail"
+                id="mail" placeholder=" " >   
+                <label class="form-label" for="email">Почта</label>
+                   
                 </div>
               
                 <div class="modal-blocks">   
@@ -362,7 +370,8 @@
                <div class="agreement-text">   
 
            <label for="agreement">Соглашаюсь с рассылкой и <a href=""  class="agreement" >принимаю Условия договора</a></label> 
-           <button class="btn-primary">Отправить</button> 
+           </div>
+           <div class="agreement-text">  <button class="btn-primary">Отправить</button> </div>
             </form>
             </div>
         </div>
