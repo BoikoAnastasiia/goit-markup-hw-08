@@ -353,7 +353,7 @@ background-color: var(--accent-color);
 
 .form-label {
 font-style: normal;
-font-weight: 500;
+font-weight: 400;
 font-size: 12px;
 line-height: 14px;
 letter-spacing: 0.01em;
@@ -364,23 +364,6 @@ top: -16px ;
 left: 0;
 }
 
-/* .form-input {
-background-image: url(../images/person.svg);
-background-repeat: no-repeat;
-fill: currentColor;
-background-position: 12px 50%;
-padding-left: 35px;
-} */
-
-/* .form-label:focus, .form-input:focus {
-  fill: var(--accent-color);
-  background-image: url(../images/phone.svg);
-} */
-
-/* .form-input:focus + .form-label {
-  fill: var(--accent-color);
-  background-color:red;
-} */
 
 .modal-icon {
   fill: var(--title-text-color);
@@ -398,8 +381,8 @@ padding-left: 35px;
 }
 
 .phone-icon {
-  width: 14px;
-  height: 14px;
+  width: 15px;
+  height: 15px;
   padding-left: 2.5px;
 }
 
