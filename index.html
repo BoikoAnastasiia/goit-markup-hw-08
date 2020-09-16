@@ -352,21 +352,20 @@
                         <label  class="form-label" for="tel">Телефон</label>
                         <span class="modal-icon"><svg class="phone-icon"> <use href="./images/modal.svg#phone"></use></svg></span>
 
-                       
-                </div>
+                        </div>
         
                <div class="modal-blocks">
                 <input class="form-input" 
                 type="email"
                 name="mail"
                 id="mail" placeholder=" " >   
-                <label class="form-label" for="email">Почта</label>
+                <label class="form-label" for="mail">Почта</label>
                 <span class="modal-icon"><svg class="email-icon"> <use href="./images/modal.svg#email-black"></use></svg></span>
    
                 </div>
               
                 <div class="modal-blocks">   
-                    <label  class="form-label" for="comment">Комментарий</label>
+                    <label class="form-label" for="comment">Комментарий</label>
                <textarea name="comment" class="comments" id="comment" placeholder="Введите текст"></textarea> </div> 
 
                <div class="agreement-text">   
@@ -374,8 +373,12 @@
            </div>
           
            <div class="form-checked">
-            <input type="checkbox" class="checked" name="agree" value="yes" id="agreement">
-            <label class="agreement"  for="agreement">Соглашаюсь с рассылкой и <a href=""class="agreement-bold" >принимаю Условия договора</a></label> 
+            
+            <label class="agreement"  for="agreement"> 
+              <input type="checkbox" class="checked" name="agree" value="yes" id="agreement">
+              Соглашаюсь с рассылкой и <a href=""class="agreement-bold" >принимаю Условия договора</a>
+              <span class="checkbox-box"></span>
+            </label> 
         </div>
            <div class="agreement-text">  <button type="submit" class="btn-primary">Отправить</button> </div>
             </form>

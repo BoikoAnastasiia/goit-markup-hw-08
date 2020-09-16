@@ -412,8 +412,14 @@ left: 0;
   color: rgba(117, 117, 117, 0.5);
 }
 
-.form-input:focus ~ .modal-icon {
+/* .form-input:focus ~ .modal-icon {
   fill: var(--accent-color);
+  transition: 350ms var(--timing);
+} */
+
+.modal-blocks:focus-within > .modal-icon {
+  fill: var(--accent-color);
+  transition: 350ms var(--timing);
 }
 
 
@@ -422,6 +428,27 @@ textarea:focus {
   border: solid 1px var(--accent-color);
   border-radius: 4px;
   outline: none;
+  transition: 350ms var(--timing);
+}
+
+.checkbox-box {
+  position: absolute;
+  width: 16px;
+  height: 15px;
+  box-shadow: 0 0 0 2px var(--title-text-color);
+  left: 0;
+  border-radius: 2px;
+  overflow: hidden;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  top: 1px;
+}
+
+.checked {
+  position: absolute;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
 }
 
 .agreement-text .btn-primary {
@@ -441,6 +468,11 @@ textarea {
   border-radius: 4px;
 }
 
+.checked:checked + .checkbox-box {
+  background-color: var(--accent-color);
+
+}
+
 .agreement-bold {
   font-style: normal;
   font-weight: 400;
@@ -451,6 +483,10 @@ textarea {
   color: var(--accent-color);
 }
 
+.form-checked {
+  text-align: center;
+}
+
 .agreement {
   font-style: normal;
   font-weight: 400;
@@ -458,7 +494,9 @@ textarea {
   line-height: 1.7em;
   letter-spacing: 0.03em;
   color: var(--primarily-text-color);
-}
+  position: relative;
+  padding-left: 25px;
+ }
 
 
 .agreement-text {
@@ -472,15 +510,15 @@ textarea {
 }
 
 .modal-header {
-font-style: normal;
-font-weight: 700;
-font-size: 20px;
-line-height: 23px;
-text-align: center;
-letter-spacing: 0.03em;
-text-transform: none;
-color: #212121;
-margin-bottom: 30px;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 23px;
+  text-align: center;
+  letter-spacing: 0.03em;
+  text-transform: none;
+  color: #212121;
+  margin-bottom: 30px;
 }
 
 
