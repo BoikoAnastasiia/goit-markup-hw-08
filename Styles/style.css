@@ -368,27 +368,27 @@ left: 0;
 .modal-icon {
   fill: var(--title-text-color);
   position: absolute;
-  /* width: 18px;
-  height: 18px; */
   left: 12px;
   top: 30%;
   display: inline-block;
+  width: 100%;
+  height: 100%;
 }
 
 .person-icon {
-  width: 18px;
-  height: 18px;
+  width: 12px;
+  height: 12px;
 }
 
 .phone-icon {
-  width: 15px;
-  height: 15px;
-  padding-left: 2.5px;
+  width: 13px;
+  height: 13px;
+  /* padding-left: 2.5px; */
 }
 
 .email-icon {
-  width: 18px;
-  height: 18px;
+  width: 15px;
+  height: 12px;
 }
 
 .form-input {
