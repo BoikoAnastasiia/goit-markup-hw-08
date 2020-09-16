@@ -352,16 +352,16 @@ background-color: var(--accent-color);
 }
 
 .form-label {
-font-style: normal;
-font-weight: 400;
-font-size: 12px;
-line-height: 14px;
-letter-spacing: 0.01em;
-color: var(--primarily-text-color);
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 14px;
+  letter-spacing: 0.01em;
+  color: var(--primarily-text-color);
 
-position: absolute;
-top: -16px ;
-left: 0;
+  position: absolute;
+  top: -16px ;
+  left: 0;
 }
 
 
@@ -371,7 +371,6 @@ left: 0;
   left: 12px;
   top: 30%;
   display: inline-block;
-  /* width: 100%; */
   height: 100%;
 }
 
@@ -412,16 +411,11 @@ left: 0;
   color: rgba(117, 117, 117, 0.5);
 }
 
-/* .form-input:focus ~ .modal-icon {
-  fill: var(--accent-color);
-  transition: 350ms var(--timing);
-} */
 
 .modal-blocks:focus-within > .modal-icon {
   fill: var(--accent-color);
   transition: 350ms var(--timing);
 }
-
 
 .form-input:focus, 
 textarea:focus {
@@ -437,22 +431,27 @@ textarea:focus {
   height: 15px;
   box-shadow: 0 0 0 2px var(--title-text-color);
   left: 0;
-  border-radius: 2px;
-  overflow: hidden;
-  background-repeat: no-repeat;
-  background-position: 50% 50%;
   top: 1px;
+  border-radius: 2px;
+  background-color: var(--primary-white-color);
+ }
+
+ .checked-input:checked ~ .checkbox-box {
+  background-color: var(--accent-color);
 }
 
-.checked {
-  position: absolute;
+.checked-input:focus ~ .checkbox-box {
+  box-shadow: 0 0 0 2px var(--accent-color);
+  background-image: url(../images/check.svg);
+  background-color: var(--accent-color);
+  background-position: center;
+}
+
+.checked-input {
+  /* position: absolute; */
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
-}
-
-.agreement-text .btn-primary {
-  margin-top: 30px;
 }
 
 .backdrop.is-hidden .modal {
@@ -466,11 +465,6 @@ textarea {
   border: 1px solid rgba(33, 33, 33, 0.2);
   box-sizing: border-box;
   border-radius: 4px;
-}
-
-.checked:checked + .checkbox-box {
-  background-color: var(--accent-color);
-
 }
 
 .agreement-bold {
@@ -521,7 +515,9 @@ textarea {
   margin-bottom: 30px;
 }
 
-
+.agreement-text .btn-primary {
+  margin-top: 30px;
+}
 
 .modal-btn {
   display: inline-flex;
