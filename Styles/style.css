@@ -950,6 +950,7 @@ h5 {
   background: #2F303A;
   padding-left: 16px;
   margin-right: 12px;
+  color: var(--primary-white-color);
 }
 
 .subscribe-form .btn-primary {
