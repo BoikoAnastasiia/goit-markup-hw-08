@@ -438,14 +438,15 @@ textarea:focus {
 
  .checked-input:checked ~ .checkbox-box {
   background-color: var(--accent-color);
+  background-image: url(../images/check.svg);
+  background-color: var(--accent-color);
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 .checked-input:focus ~ .checkbox-box {
   box-shadow: 0 0 0 2px var(--accent-color);
-  background-image: url(../images/check.svg);
-  background-color: var(--accent-color);
-  background-position: center;
-}
+  }
 
 .checked-input {
   /* position: absolute; */
@@ -522,28 +523,40 @@ textarea {
 .modal-btn {
   display: inline-flex;
   position: absolute;
-  content: "";
   background-color: var(--primary-white-color);
+  /* content: "";
   background-image: url(../images/close.svg);
   background-size: 11px;
   background-position: center;
-  background-repeat: no-repeat;
+  background-repeat: no-repeat; */
   width: 30px;
   height: 30px;
   right: 8px;
   top: 8px;
   border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 50%;
-  fill: currentColor;
-
+  /* fill: currentColor; */
+/* 
   transform: rotateY(0);
-  transition: transform 500ms linear;
+  transition: transform 500ms linear; */
 }
 
-.modal-btn:hover {
-  background-color: var(--accent-color);
-  transform: rotateY(180deg);
-  background-image: url(../images/close-w.svg);
+.close-icon {
+  fill: currentColor;
+  width: 11px;
+  height: 11px;
+
+  position: absolute;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%;
+}
+
+.modal-btn:hover .close-icon {
+  fill: var(--accent-color);
+  /* background-color: var(--accent-color); */
+  /* transform: rotateY(180deg);
+  background-image: url(../images/close-w.svg); */
 }
 
 
@@ -568,13 +581,13 @@ textarea {
   background-size: 70px;
 }
 
-  .anthena::before {
-    background-image: url(../images/Anthena.svg);
-  }
+.anthena::before {
+  background-image: url(../images/Anthena.svg);
+}
 
-  .clock::before {
-    background-image: url(../images/clock.svg);
-  }
+.clock::before {
+  background-image: url(../images/clock.svg);
+}
 
 .traits-header {
   color: var(--title-text-color);

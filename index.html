@@ -332,7 +332,10 @@
         <!-- backdrop -->
         <div class="backdrop is-hidden" data-modal>
             <div class="modal">
-                <button class="modal-btn" data-modal-close></button>
+                <button class="modal-btn" data-modal-close>
+                    <svg class="close-icon"> <use href="./images/modal.svg#close">
+                    </use></svg>
+                </button>
                 <h5 class="modal-header">Оставьте свои данные, мы вам перезвоним</h5>
                 <form autocomplete="off" >
                    <div class="modal-blocks"> 
@@ -341,7 +344,8 @@
                     name="name"
                     id="name" placeholder=" ">     
                     <label  class="form-label" for="name">Имя</label>
-                    <span class="modal-icon"><svg class="person-icon"> <use href="./images/modal.svg#person"></use></svg></span>
+                    <span class="modal-icon"><svg class="person-icon"> <use href="./images/modal.svg#person">
+                    </use></svg></span>
                     </div>
                
                     <div class="modal-blocks">
@@ -375,7 +379,7 @@
            <div class="form-checked">
             
             <label class="agreement"  for="agreement"> 
-              <input type="checkbox" class="checked-input" name="agree" value="yes" id="agreement">
+              <input type="checkbox" class="checked-input" name="agree" value="yes" id="agreement" checked >
               Соглашаюсь с рассылкой и <a href=""class="agreement-bold">принимаю Условия договора</a>
               <span class="checkbox-box"></span>
             </label> 
