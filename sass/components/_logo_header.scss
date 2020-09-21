@@ -1,0 +1,9 @@
+.logo-navigation {
+  @extend %logo;
+  color: $title-text-color;
+  margin-right: 96px;
+ }
+
+.highlighted {
+  color: $accent-color;
+}

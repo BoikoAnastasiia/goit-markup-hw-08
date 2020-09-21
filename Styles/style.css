@@ -58,7 +58,7 @@ button:focus {
   padding-top: 94px;
 }
 
-.logo {
+.logo-navigation {
   color: var(--title-text-color);
   text-decoration: none;
   font-family: 'Raleway', sans-serif;
@@ -875,7 +875,7 @@ transition: 450ms var(--timing);
   color: var(--accent-color);
 }
 
-.logo-light {
+.logo-footer {
   color: var(--primary-white-color);
   text-decoration: none;
   font-family: 'Raleway', sans-serif;
