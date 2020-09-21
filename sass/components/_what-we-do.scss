@@ -1,5 +1,5 @@
 .second-header {
-    color: var(--title-text-color);
+    color: $title-text-color;
     font-weight: 700;
     font-size: 36px;
     letter-spacing: 0.03em;
@@ -35,7 +35,7 @@
     text-align: center;
     letter-spacing: 0.03em;
     text-transform: uppercase;
-    color: var(--primary-white-color);
+    color: $primary-white-color;
   }
   
   .content-box {

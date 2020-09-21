@@ -14,7 +14,7 @@
     font-weight: 500;
     font-size: 14px;
     display: flex;
-    color: var(--title-text-color);
+    color: $title-text-color;
     text-decoration: none;
     transition: 250ms var(--timing);
   
@@ -28,7 +28,7 @@
   }
   
   .link {
-    color: var(--title-text-color);
+    color: $title-text-color;
     text-decoration: none;
     transition: 250ms var(--timing);
   }

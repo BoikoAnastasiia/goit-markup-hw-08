@@ -5,7 +5,7 @@
     url(../images/background_team.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-    color: var(--primary-white-color);
+    color: $primary-white-color;
     padding-bottom: 200px;
     padding-top: 200px;
     align-items: center;
@@ -41,7 +41,7 @@
     justify-content: center;
     align-items: center;
     box-sizing: border-box;
-    color: var(--primary-white-color);
+    color: $primary-white-color;
     background-color: var(--accent-color);
     border-style: none;
     cursor: pointer;
