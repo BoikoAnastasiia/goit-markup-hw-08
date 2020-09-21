@@ -220,10 +220,7 @@
     top: 8px;
     border: 1px solid rgba(0, 0, 0, 0.1);
     border-radius: 50%;
-    /* fill: currentColor; */
-  /* 
-    transform: rotateY(0);
-    transition: transform 500ms linear; */
+  
   }
   
   .close-icon {
@@ -239,7 +236,4 @@
   
   .modal-btn:hover .close-icon {
     fill: var(--accent-color);
-    /* background-color: var(--accent-color); */
-    /* transform: rotateY(180deg);
-    background-image: url(../images/close-w.svg); */
-  }
+   }
