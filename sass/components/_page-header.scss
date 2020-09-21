@@ -1,21 +1,27 @@
 .navigation {
     display: flex;
     align-items: center;
-    margin-right: auto;
+    justify-content: space-between;
 }
 
 .nav {
   font-weight: 500;
   font-size: 14px;
   display: flex;
+  padding-right: auto;
   color: $title-text-color;
   text-decoration: none;
   transition: 250ms $timing;
+
+  & .nav-link:hover,
+  & .nav-link:focus {
+    color: $accent-color;
+  }
 }
-  
-.nav .nav-link:hover,
-.nav .nav-link:focus {
-  color: $accent-color;
+
+.navigation-item {
+  display: flex;
+  align-items: center;
 }
 
 .nav-link {
@@ -28,33 +34,36 @@
   display: flex;
   align-items: center;
   align-content: space-between;
+  justify-content: flex-end;
+  letter-spacing: 0.02em;
 }
 
-.link-contacs:last-child {
+.contacts-upper__link:last-child {
   margin-left: 50px;
 }
 
-a.link-contacs svg {
+a.contacts-upper__link svg {
   margin-right: 10px;
   transition: 250ms $timing;
 }
 
-.envelope {
+.contacts-upper__envelope {
   fill: currentColor;
   width: 16px; 
   height: 12px;
+  
 }
 
-.smartphone {
+.contacts-upper__smartphone {
   width: 10px; 
   height: 16px;
   fill: currentColor;
 }
 
-.link-contacs:hover .smartphone,
-.link-contacs:focus .smartphone, 
-.link-contacs:hover .envelope,
-.link-contacs:focus .envelope {
+.contacts-upper__link:hover .smartphone,
+.contacts-upper__link:focus .smartphone, 
+.contacts-upper__link:hover .envelope,
+.contacts-upper__link:focus .envelope {
   fill: $accent-color;
 }
 
@@ -80,7 +89,7 @@ a.link-contacs svg {
   color: $accent-color;
 }
 
-.link-contacs {
+.contacts-upper__link {
   display: inline;
   color: $primarily-text-color;
   text-decoration: none;
@@ -90,12 +99,12 @@ a.link-contacs svg {
 
 }
 
-.link-contacs .svg:hover {
+.contacts-upper__link .svg:hover {
   fill: red;
 }
 
-.link-contacs:hover,
-.link-contacs:focus {
+.contacts-upper__link:hover,
+.contacts-upper__link:focus {
   color: $accent-color;
 }
 

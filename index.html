@@ -14,31 +14,37 @@
     <header  class="page-header">
         <div class="container flexbox">
                 <nav class="navigation" >
-                    <a href="./index.html" class="logo-navigation"><span class="logo-navigation__highlighted">Web</span>Studio </a>
-        
-        <ul class="nav list">
+                   
+        <div class="navigation-item">
+            <a href="./index.html" class="logo-navigation">
+                <span class="logo-navigation__highlighted">Web</span>Studio </a>
+    
+            <ul class="nav list">
             <li class="nav-list ">
-                <a href="./index.html" class="link current">Студия</a>    
+                <a href="./index.html" class="nav-link current">Студия</a>    
             </li>
             <li class="nav-list">
                 <a href="./portfolio.html" class="nav-link ">Портфолио</a>
             </li>
             <li class="nav-list">
-                <a href="" class="link">Контакты</a>
+                <a href="" class="nav-link">Контакты</a>
             </li>
         </ul>
+    </div>
+
+        <div class="contacts-upper">
+            <a href="mailto:info@devstudio.com" class="contacts-upper__link">
+            <svg class="contacts-upper__envelope">
+            <use href="./images/sprite.svg#envelope" >
+            </use>
+            </svg>
+            info@devstudio.com </a>
+        <a href="tel:+380961111111" class="contacts-upper__link"> <svg class="contacts-upper__smartphone">
+            <use href="./images/sprite.svg#smartphone"></use> </svg> +38 096 111 11 11</a>
+    </div>
+
         </nav>
-                <div class="contacts-upper">
-            
-            <a href="mailto:info@devstudio.com" class="link-contacs">
-                <svg class="envelope">
-                <use href="./images/sprite.svg#envelope" >
-                </use>
-                </svg>
-                info@devstudio.com </a>
-            <a href="tel:+380961111111" class="link-contacs"> <svg class="smartphone">
-                <use href="./images/sprite.svg#smartphone"></use> </svg> +38 096 111 11 11</a>
-        </div>
+        
         </div>
             </header>
         
@@ -378,8 +384,8 @@
            <div class="form-checked">
             
             <label class="agreement"  for="agreement"> 
-              <input type="checkbox" class="checked-input" name="agree" value="yes" id="agreement" checked>
-              Соглашаюсь с рассылкой и <a href=""class="agreement-bold">принимаю Условия договора</a>
+              <input type="checkbox" class="checked-input" name="agree" value="yes" id="agreement" >
+              Соглашаюсь с рассылкой и <a href="" class="agreement-bold">принимаю Условия договора</a>
               <span class="checkbox-box"></span>
             </label> 
         </div>
