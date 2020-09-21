@@ -42,7 +42,7 @@
     align-items: center;
     box-sizing: border-box;
     color: $primary-white-color;
-    background-color: var(--accent-color);
+    background-color: $accent-color;
     border-style: none;
     cursor: pointer;
     font-weight: 700;
@@ -63,7 +63,7 @@
   
   .btn-primary:hover,
   .btn-primery:focus {
-  background-color: var(--accent-color);
+  background-color: $accent-color;
   }
   
   .hero-button {

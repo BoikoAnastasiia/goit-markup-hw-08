@@ -53,11 +53,11 @@
   
   .logo-link:hover svg {
     cursor: pointer;
-    fill: var(--accent-color);
+    fill: $accent-color;
   }
   
   .logo-link:hover {
-    border: 1px solid var(--accent-color);
+    border: 1px solid $accent-color;
     border-radius: 4px;
   }
   

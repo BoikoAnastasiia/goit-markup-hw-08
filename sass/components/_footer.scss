@@ -6,7 +6,7 @@
   }
    
   .footer-contacts {
-    color: var(--primarily-text-color);
+    color: $primarily-text-color;
     font-size: 14px;
     line-height: 24px;
     font-weight: 400;
@@ -33,7 +33,7 @@
   
   .footer-contacts:hover,
   .footer-contacts:focus {
-    color: var(--accent-color);
+    color: $accent-color;
   }
   
   .logo-footer {
@@ -53,7 +53,7 @@
   }
   
   .follow-link:hover {
-    background-color: var(--accent-color);
+    background-color: $accent-color;
   }
   
   .follow-link:hover .icon {

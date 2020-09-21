@@ -42,7 +42,7 @@
     font-size: 12px;
     line-height: 14px;
     letter-spacing: 0.01em;
-    color: var(--primarily-text-color);
+    color: $primarily-text-color;
   
     position: absolute;
     top: -16px ;
@@ -98,13 +98,13 @@
   
   
   .modal-blocks:focus-within > .modal-icon {
-    fill: var(--accent-color);
+    fill: $accent-color;
     transition: 350ms var(--timing);
   }
   
   .form-input:focus, 
   textarea:focus {
-    border: solid 1px var(--accent-color);
+    border: solid 1px $accent-color;
     border-radius: 4px;
     outline: none;
     transition: 350ms var(--timing);
@@ -122,15 +122,15 @@
    }
   
    .checked-input:checked ~ .checkbox-box {
-    background-color: var(--accent-color);
+    background-color: $accent-color;
     background-image: url(../images/check.svg);
-    background-color: var(--accent-color);
+    background-color: $accent-color;
     background-position: center;
     background-repeat: no-repeat;
   }
   
   .checked-input:focus ~ .checkbox-box {
-    box-shadow: 0 0 0 2px var(--accent-color);
+    box-shadow: 0 0 0 2px $accent-color;
     }
   
   .checked-input {
@@ -160,7 +160,7 @@
     line-height: 1.7em;
     letter-spacing: 0.03em;
     text-decoration-line: underline;
-    color: var(--accent-color);
+    color: $accent-color;
   }
   
   .form-checked {
@@ -173,7 +173,7 @@
     font-size: 14px;
     line-height: 1.7em;
     letter-spacing: 0.03em;
-    color: var(--primarily-text-color);
+    color: $primarily-text-color;
     position: relative;
     padding-left: 25px;
    }
@@ -185,7 +185,7 @@
     font-size: 14px;
     line-height: 1.7em;
     letter-spacing: 0.03em;
-    color: var(--primarily-text-color);
+    color: $primarily-text-color;
     text-align: center;
   }
   
@@ -235,5 +235,5 @@
   }
   
   .modal-btn:hover .close-icon {
-    fill: var(--accent-color);
+    fill: $accent-color;
    }

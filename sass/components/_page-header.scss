@@ -2,136 +2,125 @@
     display: flex;
     align-items: center;
     margin-right: auto;
-    }
-    
- 
+}
+
+.nav {
+  font-weight: 500;
+  font-size: 14px;
+  display: flex;
+  color: $title-text-color;
+  text-decoration: none;
+  transition: 250ms $timing;
+}
   
-  .highlighted {
-    color: var(--accent-color);
-  }
-  
-  .site-nav {
-    font-weight: 500;
-    font-size: 14px;
-    display: flex;
-    color: $title-text-color;
-    text-decoration: none;
-    transition: 250ms var(--timing);
-  
-  }
-  
-  
-  .site-nav .link:hover,
-  .site-nav .link:focus {
-    color: var(--accent-color);
-    
-  }
-  
-  .link {
-    color: $title-text-color;
-    text-decoration: none;
-    transition: 250ms var(--timing);
-  }
-  
-  .contacts-upper {
-    display: flex;
-    align-items: center;
-    align-content: space-between;
-  }
-  
-  .link-contacs:last-child {
-    margin-left: 50px;
-  }
-  
-  a.link-contacs svg {
-    margin-right: 10px;
-    transition: 250ms var(--timing);
-  }
-  
-  .envelope {
-    fill: currentColor;
-    width: 16px; 
-    height: 12px;
-  }
-  
-  .smartphone {
-    width: 10px; 
-    height: 16px;
-    fill: currentColor;
-  }
-  
-  .link-contacs:hover .smartphone,
-  .link-contacs:focus .smartphone, 
-  .link-contacs:hover .envelope,
-  .link-contacs:focus .envelope {
-    fill: var(--accent-color);
-  }
-  
-  .current {
-    color: var(--accent-color);
-    position: relative;
-    display: block;
-    /* width: 100%;
-    height: 100%; */
-   }
-  
-  .current::after {
-    bottom: -39px;
-    left: 0;
-    content: "";
-    width: 100%;
-    height: 4px;
-    background: var(--accent-color);
-    border-radius: 2px;
-    position: absolute;
-  }
-  
-  .site-nav .link:hover,
-  .site-nav .link:focus {
-    color: var(--accent-color);
-  }
-  
-  .link-contacs {
-    display: inline;
-    color: var(--primarily-text-color);
-    text-decoration: none;
-    font-weight: 500;
-    font-size: 14px;
-    transition: 250ms var(--timing);
-  
-  }
-  
-  .link-contacs .svg:hover {
-    fill: red;
-  }
-  
-  .link-contacs:hover,
-  .link-contacs:focus {
-    color: var(--accent-color);
-  }
-  
-  
-  .menu-item:not(:last-child) {
-    margin-right: 50px;
-  }
-  
-  .page-header {
-    padding-top: 32px;
-    padding-bottom: 32px;
-    border: 1px solid #ECECEC;
-  }
-  
-  .page-header .flexbox {
-    justify-content: flex-end;
-    align-items: center;
-  }
-  
-  .navigation {
-    display: flex;
-    align-items: center;
-    margin-right: auto;
-  }
-  
-  .nopadding {
-    padding-top: 94px;
-  }
+.nav .nav-link:hover,
+.nav .nav-link:focus {
+  color: $accent-color;
+}
+
+.nav-link {
+  color: $title-text-color;
+  text-decoration: none;
+  transition: 250ms $timing;
+}
+
+.contacts-upper {
+  display: flex;
+  align-items: center;
+  align-content: space-between;
+}
+
+.link-contacs:last-child {
+  margin-left: 50px;
+}
+
+a.link-contacs svg {
+  margin-right: 10px;
+  transition: 250ms $timing;
+}
+
+.envelope {
+  fill: currentColor;
+  width: 16px; 
+  height: 12px;
+}
+
+.smartphone {
+  width: 10px; 
+  height: 16px;
+  fill: currentColor;
+}
+
+.link-contacs:hover .smartphone,
+.link-contacs:focus .smartphone, 
+.link-contacs:hover .envelope,
+.link-contacs:focus .envelope {
+  fill: $accent-color;
+}
+
+.current {
+  color: $accent-color;
+  position: relative;
+  display: block;
+}
+
+.current::after {
+  bottom: -39px;
+  left: 0;
+  content: "";
+  width: 100%;
+  height: 4px;
+  background: $accent-color;
+  border-radius: 2px;
+  position: absolute;
+}
+
+.nav .link:hover,
+.nav .link:focus {
+  color: $accent-color;
+}
+
+.link-contacs {
+  display: inline;
+  color: $primarily-text-color;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 14px;
+  transition: 250ms $timing;
+
+}
+
+.link-contacs .svg:hover {
+  fill: red;
+}
+
+.link-contacs:hover,
+.link-contacs:focus {
+  color: $accent-color;
+}
+
+
+.nav-list:not(:last-child) {
+  margin-right: 50px;
+}
+
+.page-header {
+  padding-top: 32px;
+  padding-bottom: 32px;
+  border: 1px solid #ECECEC;
+}
+
+.page-header .flexbox {
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.navigation {
+  display: flex;
+  align-items: center;
+  margin-right: auto;
+}
+
+.nopadding {
+  padding-top: 94px;
+}
