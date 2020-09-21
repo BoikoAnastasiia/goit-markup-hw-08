@@ -1,0 +1,47 @@
+.planing::before {
+    background-image: url(../images/diagram.svg);
+  }
+  
+  .cosmo::before {
+    background-image: url(../images/astronaut.svg);
+  }
+  
+  .traits::before {
+    display: block;
+    content: "";
+    height: 120px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: #F5F4FA;
+    background-size: 70px;
+  }
+  
+  .anthena::before {
+    background-image: url(../images/Anthena.svg);
+  }
+  
+  .clock::before {
+    background-image: url(../images/clock.svg);
+  }
+  
+  .traits-header {
+    color: var(--title-text-color);
+    font-weight: 700;
+    font-size: 14px;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+  }
+  
+  .traits-desription {
+    color: var(--primarily-text-color);
+    font-weight: 400;
+    font-size: 14px;
+    letter-spacing: 0.03em;
+    line-height: 1.7;
+  }
+  
+  .trait-list:not(:last-child) {
+    margin-right: 30px;
+  }
+  

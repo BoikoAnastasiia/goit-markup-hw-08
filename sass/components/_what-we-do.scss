@@ -1,0 +1,50 @@
+.second-header {
+    color: var(--title-text-color);
+    font-weight: 700;
+    font-size: 36px;
+    letter-spacing: 0.03em;
+    text-align: center;
+  }
+  
+  .wedo {
+    align-content: space-between;
+  }
+  
+  .overlay {
+    position: relative;
+  }
+  
+  .wedo li:nth-child(-n + 2) {
+    margin-right: 30px;
+  }
+  
+  .overlay-text {
+    width: 100%;
+    background: rgba(47, 48, 58, 0.8);
+    height: 70px;
+    position: absolute;
+    padding-top: 27px;
+    left: 0;
+    bottom: 0;
+    margin: 0;
+  
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.1em;
+    text-align: center;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: var(--primary-white-color);
+  }
+  
+  .content-box {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .container .list-cards,
+  .container .partners-list,
+  .container .wedo {
+    margin-top: 50px;
+  }

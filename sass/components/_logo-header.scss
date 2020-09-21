@@ -2,6 +2,10 @@
   @extend %logo;
   color: $title-text-color;
   margin-right: 96px;
+  &:focus {
+    color: var(--accent-color);
+  }
+
  }
 
 .highlighted {
