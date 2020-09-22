@@ -5,12 +5,12 @@ html {
 
 .hidden {
   position: absolute;
-  clip: rect(1px 1px 1px 1px);
-  clip: rect(1px, 1px, 1px, 1px);
-  padding: 0;
-  border: 0;
-  height: 1px;
   width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
   overflow: hidden;
 }
 
@@ -65,6 +65,11 @@ button:focus {
   font-size: 26px;
   font-weight: 700;
   letter-spacing: 0.03em;
+}
+
+.footer-icon {
+  width: 20px;
+  height: 20px;
 }
 
 .container {
@@ -397,6 +402,15 @@ summary {
   padding-bottom: 60px;
 }
 
+.footer-address {
+  color: #ffffff;
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: 400;
+  letter-spacing: 0.03em;
+  font-style: normal;
+}
+
 .footer-contacts {
   color: #757575;
   font-size: 14px;
@@ -409,22 +423,12 @@ summary {
   margin-top: 9px;
 }
 
-.footer-social .icon {
-  fill: #ffffff;
-}
-
-.footer-address {
-  color: #ffffff;
-  font-size: 14px;
-  line-height: 24px;
-  font-weight: 400;
-  letter-spacing: 0.03em;
-  font-style: normal;
-}
-
-.footer-contacts:hover,
-.footer-contacts:focus {
+.footer-contacts-contacts:hover, .footer-contacts-contacts:focus {
   color: #2196F3;
+}
+
+.footer-icon {
+  fill: #ffffff;
 }
 
 .footer-social .social-list:not(:last-child) {
@@ -444,7 +448,7 @@ summary {
   margin-left: 70px;
 }
 
-.follow-link {
+.follow--link {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;

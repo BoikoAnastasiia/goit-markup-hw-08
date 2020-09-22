@@ -4,12 +4,12 @@ html {
 
 .hidden {
   position: absolute;
-  clip: rect(1px 1px 1px 1px); 
-  clip: rect(1px, 1px, 1px, 1px);
-  padding: 0;
-  border: 0;
-  height: 1px;
   width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
   overflow: hidden;
 }
 
@@ -63,6 +63,11 @@ button:focus {
   font-size: 26px;
   font-weight: 700;
   letter-spacing: 0.03em;
+ }
+
+ %icon {
+  width: 20px;
+  height: 20px;
  }
 
 .container {
