@@ -50,6 +50,15 @@ button:focus {
   padding-top: 94px;
 }
 
+.logo-navigation {
+  text-decoration: none;
+  font-family: 'Raleway', sans-serif;
+  text-decoration: none;
+  font-size: 26px;
+  font-weight: 700;
+  letter-spacing: 0.03em;
+}
+
 .container {
   width: 1200px;
   padding-left: 15px;
@@ -69,8 +78,7 @@ h5 {
 }
 
 /*! modern-normalize v0.7.0 | MIT License | https://github.com/sindresorhus/modern-normalize */
-*
-, ::after, ::before {
+*, ::after, ::before {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
 }
@@ -215,6 +223,10 @@ summary {
   color: #2196F3;
 }
 
+.nav-list:not(:last-child) {
+  margin-right: 50px;
+}
+
 .navigation-item {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -229,6 +241,7 @@ summary {
   text-decoration: none;
   -webkit-transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  display: block;
 }
 
 .contacts-upper {
@@ -246,16 +259,6 @@ summary {
   letter-spacing: 0.02em;
 }
 
-.contacts-upper__link:last-child {
-  margin-left: 50px;
-}
-
-a.contacts-upper__link svg {
-  margin-right: 10px;
-  -webkit-transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
 .contacts-upper__envelope {
   fill: currentColor;
   width: 16px;
@@ -268,11 +271,39 @@ a.contacts-upper__link svg {
   fill: currentColor;
 }
 
-.contacts-upper__link:hover .smartphone,
-.contacts-upper__link:focus .smartphone,
-.contacts-upper__link:hover .envelope,
-.contacts-upper__link:focus .envelope {
+.contacts-upper__link {
+  color: #757575;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 14px;
+  -webkit-transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.contacts-upper__link__link:last-child {
+  margin-left: 50px;
+}
+
+.contacts-upper__link:hover, .contacts-upper__link:focus {
+  color: #2196F3;
+}
+
+.contacts-upper__link:hover .contacts-upper__envelope,
+.contacts-upper__link:focus .contacts-upper__envelope,
+.contacts-upper__link:hover .contacts-upper__smartphone,
+.contacts-upper__link:focus .contacts-upper__smartphone {
   fill: #2196F3;
+}
+
+.contacts-upper__link:not(:last-child) {
+  margin-right: 30px;
+}
+
+.contacts-upper__envelope,
+.contacts-upper__smartphone {
+  margin-right: 10px;
+  -webkit-transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .current {
@@ -292,41 +323,13 @@ a.contacts-upper__link svg {
   position: absolute;
 }
 
-.nav .link:hover,
-.nav .link:focus {
-  color: #2196F3;
-}
-
-.contacts-upper__link {
-  display: inline;
-  color: #757575;
-  text-decoration: none;
-  font-weight: 500;
-  font-size: 14px;
-  -webkit-transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.contacts-upper__link .svg:hover {
-  fill: red;
-}
-
-.contacts-upper__link:hover,
-.contacts-upper__link:focus {
-  color: #2196F3;
-}
-
-.nav-list:not(:last-child) {
-  margin-right: 50px;
-}
-
 .page-header {
   padding-top: 32px;
   padding-bottom: 32px;
   border: 1px solid #ECECEC;
 }
 
-.page-header .flexbox {
+.page-header.flexbox {
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
@@ -478,6 +481,15 @@ a.contacts-upper__link svg {
   height: 24px;
   content: "";
   margin-left: 10px;
+}
+
+.logo-navigation {
+  color: #212121;
+  margin-right: 96px;
+}
+
+.logo-navigation__highlighted {
+  color: #2196F3;
 }
 
 .filter-header {
