@@ -1,0 +1,18 @@
+.logo-navigation {
+  @extend %logo;
+  color: $title-text-color;
+  margin-right: 96px;
+
+  &__highlighted {
+    color: $accent-color;
+ }
+}
+
+.logo-footer {
+  color: $primary-white-color;
+  margin-bottom: 20px;
+  @extend  %logo;
+  &__highlighted {
+    color: $accent-color;
+ }
+}

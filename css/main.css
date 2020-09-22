@@ -58,8 +58,9 @@ button:focus {
   padding-top: 94px;
 }
 
-.logo-navigation {
+.logo-navigation, .logo-footer {
   text-decoration: none;
+  display: block;
   font-family: 'Raleway', sans-serif;
   text-decoration: none;
   font-size: 26px;
@@ -231,6 +232,15 @@ summary {
 }
 
 .logo-navigation__highlighted {
+  color: #2196F3;
+}
+
+.logo-footer {
+  color: #ffffff;
+  margin-bottom: 20px;
+}
+
+.logo-footer__highlighted {
   color: #2196F3;
 }
 
@@ -714,18 +724,6 @@ textarea {
   color: #2196F3;
 }
 
-.logo-footer {
-  color: #ffffff;
-  text-decoration: none;
-  font-family: 'Raleway', sans-serif;
-  text-decoration: none;
-  font-size: 26px;
-  font-weight: 700;
-  letter-spacing: 0.03em;
-  display: inline-block;
-  margin-bottom: 20px;
-}
-
 .footer-social .social-list:not(:last-child) {
   margin-right: 10px;
 }
@@ -955,11 +953,6 @@ button, select {
   margin-right: 0px;
 }
 
-.logo-link:hover {
-  border: 1px solid #2196F3;
-  border-radius: 4px;
-}
-
 .logo-link {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -988,6 +981,11 @@ button, select {
 .logo-link:hover svg {
   cursor: pointer;
   fill: #2196F3;
+}
+
+.logo-link:hover {
+  border: 1px solid #2196F3;
+  border-radius: 4px;
 }
 
 .team-icon {
