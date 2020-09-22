@@ -41,11 +41,7 @@
       background-color: $accent-color;
   }
 
-    & .social-link,
-    & .follow-link {
-    width: 44px;
-    height: 44px;
-  }
+   
 }
 
 .team-names {
@@ -79,4 +75,10 @@
   font-size: 16px;
   letter-spacing: 0.03em;
   line-height: 1.1;
+}
+
+.social-list .social-link,
+.social-list .follow-link {
+width: 44px;
+height: 44px;
 }

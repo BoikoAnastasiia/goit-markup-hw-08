@@ -1033,12 +1033,6 @@ button, select {
   background-color: #2196F3;
 }
 
-.social-link .social-link,
-.social-link .follow-link {
-  width: 44px;
-  height: 44px;
-}
-
 .team-names {
   color: #212121;
   font-weight: 500;
@@ -1071,7 +1065,12 @@ button, select {
   font-size: 16px;
   letter-spacing: 0.03em;
   line-height: 1.1;
-  /* padding-bottom: 30px; */
+}
+
+.social-list .social-link,
+.social-list .follow-link {
+  width: 44px;
+  height: 44px;
 }
 
 .planing::before {
