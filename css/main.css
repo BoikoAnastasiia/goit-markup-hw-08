@@ -787,6 +787,7 @@ textarea {
 }
 
 .hero-header {
+  font-family: Roboto;
   font-weight: 900;
   font-size: 44px;
   letter-spacing: 0.06em;
@@ -820,7 +821,7 @@ textarea {
   padding-right: auto;
 }
 
-.btn-primary {
+.hero .btn-primary {
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex;
@@ -845,27 +846,17 @@ textarea {
   -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
           box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
-  -webkit-transition: background-color 250ms var(--timing);
-  transition: background-color 250ms var(--timing);
+  -webkit-transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.hero .btn-primary:hover, .hero .btn-primary:focus {
+  background-color: #45A5F1;
 }
 
 button, select {
   text-transform: none;
   border-style: none;
-}
-
-.btn-primary:hover,
-.btn-primery:focus {
-  background-color: #2196F3;
-}
-
-.hero-button {
-  padding-bottom: 200px;
-  margin: 0;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
 }
 
 .partners-list {
