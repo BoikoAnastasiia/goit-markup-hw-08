@@ -99,6 +99,16 @@ h5 {
   margin: 0px;
 }
 
+.second-header {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 42px;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: #212121;
+}
+
 /*! modern-normalize v0.7.0 | MIT License | https://github.com/sindresorhus/modern-normalize */
 *, ::after, ::before {
   -webkit-box-sizing: border-box;
@@ -887,7 +897,7 @@ button, select {
   border-style: none;
 }
 
-.partners-list {
+.partners {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   display: -webkit-box;
@@ -896,6 +906,7 @@ button, select {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  margin-top: 50px;
 }
 
 .logo-one {
@@ -944,11 +955,6 @@ button, select {
   margin-right: 0px;
 }
 
-.logo-link:hover svg {
-  cursor: pointer;
-  fill: #2196F3;
-}
-
 .logo-link:hover {
   border: 1px solid #2196F3;
   border-radius: 4px;
@@ -970,23 +976,18 @@ button, select {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-transition: 250ms var(--timing);
-  transition: 250ms var(--timing);
+  -webkit-transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .logo-link svg {
-  -webkit-transition: 450ms var(--timing);
-  transition: 450ms var(--timing);
+  -webkit-transition: 450ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: 450ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.team-header {
-  font-style: normal;
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 42px;
-  text-align: center;
-  letter-spacing: 0.03em;
-  color: #212121;
+.logo-link:hover svg {
+  cursor: pointer;
+  fill: #2196F3;
 }
 
 .team-icon {
@@ -1118,14 +1119,6 @@ button, select {
 
 .trait-list:not(:last-child) {
   margin-right: 30px;
-}
-
-.wedo-header {
-  color: #212121;
-  font-weight: 700;
-  font-size: 36px;
-  letter-spacing: 0.03em;
-  text-align: center;
 }
 
 .wedo {
