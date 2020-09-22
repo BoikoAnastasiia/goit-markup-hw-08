@@ -36,8 +36,6 @@ margin-right: 50px;
    
 }
 
-
-
 .contacts-upper {
   display: flex;
   align-items: center;
@@ -64,6 +62,9 @@ margin-right: 50px;
   font-weight: 500;
   font-size: 14px;
   transition: 250ms $timing;
+  display: flex;
+  align-items: center;
+
 
     &__link:last-child {
       margin-left: 50px;
