@@ -1,10 +1,18 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap");
 html {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
 }
 
 .hidden {
-  display: none;
+  position: absolute;
+  clip: rect(1px 1px 1px 1px);
+  clip: rect(1px, 1px, 1px, 1px);
+  padding: 0;
+  border: 0;
+  height: 1px;
+  width: 1px;
+  overflow: hidden;
 }
 
 *,
@@ -65,6 +73,20 @@ button:focus {
   padding-right: 15px;
   margin-right: auto;
   margin-left: auto;
+}
+
+.flexbox {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 h5 {
@@ -821,7 +843,7 @@ textarea {
   padding-right: auto;
 }
 
-.hero .btn-primary {
+.btn-primary {
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex;
@@ -850,7 +872,7 @@ textarea {
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.hero .btn-primary:hover, .hero .btn-primary:focus {
+.btn-primary:hover, .btn-primary:focus {
   background-color: #45A5F1;
 }
 
@@ -1062,7 +1084,7 @@ button, select {
   background-image: url(../images/astronaut.svg);
 }
 
-.traits::before {
+.trait-list::before {
   display: block;
   content: "";
   height: 120px;
@@ -1101,7 +1123,7 @@ button, select {
   margin-right: 30px;
 }
 
-.second-header {
+.wedo-header {
   color: #212121;
   font-weight: 700;
   font-size: 36px;
@@ -1114,12 +1136,12 @@ button, select {
       align-content: space-between;
 }
 
-.overlay {
-  position: relative;
-}
-
 .wedo li:nth-child(-n + 2) {
   margin-right: 30px;
+}
+
+.overlay {
+  position: relative;
 }
 
 .overlay-text {
@@ -1139,14 +1161,6 @@ button, select {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: #ffffff;
-}
-
-.content-box {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
 }
 
 .container .list-cards,

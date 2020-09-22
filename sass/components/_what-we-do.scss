@@ -1,4 +1,4 @@
-.second-header {
+.wedo-header {
     color: $title-text-color;
     font-weight: 700;
     font-size: 36px;
@@ -8,14 +8,13 @@
   
   .wedo {
     align-content: space-between;
+    & li:nth-child(-n + 2) {
+      margin-right: 30px;
+    }
   }
   
   .overlay {
     position: relative;
-  }
-  
-  .wedo li:nth-child(-n + 2) {
-    margin-right: 30px;
   }
   
   .overlay-text {
@@ -38,10 +37,6 @@
     color: $primary-white-color;
   }
   
-  .content-box {
-    display: flex;
-    flex-wrap: wrap;
-  }
   
   .container .list-cards,
   .container .partners-list,
