@@ -1,5 +1,6 @@
 @import "./utils/vars";
-@import "./utils/placeholders";
+@import "./utils/mixins";
+@import "./utils/general";
 @import "./base/_normilize.scss";
 @import "./components/page-header";
 @import "./components/footer";

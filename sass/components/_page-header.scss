@@ -5,8 +5,7 @@
 }
 
 .nav {
-  font-weight: 500;
-  font-size: 14px;
+  @include font(14px, 1.18, 500);
   display: flex;
   padding-right: auto;
   color: $title-text-color;
@@ -58,9 +57,8 @@ margin-right: 50px;
 
 .contacts-upper__link {
   color: $primarily-text-color;
+  @include font(14px, 1.18, 500);
   text-decoration: none;
-  font-weight: 500;
-  font-size: 14px;
   transition: 250ms $timing;
   display: flex;
   align-items: center;

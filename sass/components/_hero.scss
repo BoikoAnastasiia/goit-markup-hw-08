@@ -47,8 +47,7 @@
     background-color: $accent-color;
     border-style: none;
     cursor: pointer;
-    font-weight: 700;
-    font-size: 16px;
+    @include font(16px, 1.18, 700);
     letter-spacing: 0.06em;
     text-align: center;
     width: 200px;
