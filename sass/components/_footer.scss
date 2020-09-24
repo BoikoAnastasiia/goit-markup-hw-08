@@ -57,6 +57,7 @@
     margin-top: 12px;
     margin-left: 70px;
     margin-right: 93px;
+    background-color:red;
 
     &-link {
       display: flex;
@@ -67,8 +68,8 @@
       align-items: center;
       border-radius: 50%;
       background-color: rgba(255, 255, 255, 0.1);
-      transition: 450ms $--timing;
-          }
+      transition: 450ms $timing;
+        }
   }
   
    .subscribe-container {
