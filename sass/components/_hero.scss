@@ -37,33 +37,3 @@
     }
     
   }
-  
-    .btn-primary {
-    display: inline-flex;
-    justify-content: center;
-    align-items: center;
-    box-sizing: border-box;
-    color: $primary-white-color;
-    background-color: $accent-color;
-    border-style: none;
-    cursor: pointer;
-    @include font(16px, 1.18, 700);
-    letter-spacing: 0.06em;
-    text-align: center;
-    width: 200px;
-    height: 50px;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-    border-radius: 4px;
-    transition: background-color 250ms $timing;
-
-    &:hover,
-    &:focus {
-    background-color: #45A5F1;
-    }
-  }
-  
-  button, select {
-    text-transform: none;
-    border-style: none;
-  }
-  
