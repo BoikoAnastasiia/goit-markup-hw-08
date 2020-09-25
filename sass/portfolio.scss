@@ -1,10 +1,10 @@
 
+@import "./base/_normilize.scss";
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap');
 @import "./utils/vars";
 @import "../fonts";
 @import "./utils/mixins";
 @import "./utils/general";
-@import "./base/_normilize.scss";
 @import "./components/page-header";
 @import "./components/footer";
 @import "./components/logo";
