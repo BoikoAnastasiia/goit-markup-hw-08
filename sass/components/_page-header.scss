@@ -1,12 +1,27 @@
-.navigation {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+
+.page-header {
+  // padding-top: 32px;
+  // padding-bottom: 32px;
+  border-bottom: 1px solid #ECECEC;
+  min-width: 60px;
+  
+  // &.flexbox {
+  //   justify-content: flex-end;
+  //   align-items: center;
+  // }
+}
+
+.logo-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  min-height: 80px;
 }
 
 .nav {
   @include font(14px, 1.18, 500);
-  display: flex;
+  // display: flex;
+  text-align: center;
   padding-right: auto;
   color: $title-text-color;
   text-decoration: none;
@@ -18,28 +33,31 @@
   }
 }
 
-.nav-list:not(:last-child) { 
-margin-right: 50px;
+.menu {
+  text-align: center;
 }
 
-.navigation-item {
-  display: flex;
-  align-items: center;
-}
+// .nav-list:not(:last-child) { 
+//     margin-right: 50px;
+// }
+
+// .navigation-item {
+//   display: flex;
+//   align-items: center;
+// }
 
 .nav-link {
   color: $title-text-color;
   text-decoration: none;
   transition: 250ms $timing;
   display: block;
-   
 }
 
 .contacts-upper {
-  display: flex;
-  align-items: center;
-  align-content: space-between;
-  justify-content: flex-end;
+  // display: flex;
+  // align-items: center;
+  // align-content: space-between;
+  // justify-content: flex-end;
   letter-spacing: 0.02em;
 
     &__envelope {
@@ -55,18 +73,30 @@ margin-right: 50px;
       }
 }
 
+.menu-button {
+  display: inline-flex;
+  margin: 0;
+  padding: 0;
+  border: none;
+  background-color: transparent;
+
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
+}
+
 .contacts-upper__link {
   color: $primarily-text-color;
   @include font(14px, 1.18, 500);
   text-decoration: none;
   transition: 250ms $timing;
-  display: flex;
-  align-items: center;
+  // display: flex;
+  // align-items: center;
 
 
-    &__link:last-child {
-      margin-left: 50px;
-    }
+    // &__link:last-child {
+    //   margin-left: 50px;
+    // }
 
     &:hover,
     &:focus {
@@ -94,10 +124,12 @@ margin-right: 50px;
 .current {
   color: $accent-color;
   position: relative;
-  display: block;
+  display: inline;
+  text-align: center;
+
   
   &::after {
-    bottom: -39px;
+    bottom: -8px;
     left: 0;
     content: "";
     width: 100%;
@@ -109,21 +141,12 @@ margin-right: 50px;
   
 }
 
-.page-header {
-  padding-top: 32px;
-  padding-bottom: 32px;
-  border: 1px solid #ECECEC;
-  
-  &.flexbox {
-    justify-content: flex-end;
-    align-items: center;
-  }
-}
 
 .navigation {
-  display: flex;
-  align-items: center;
-  margin-right: auto;
+  // display: flex;
+  // align-items: center;
+  // margin-right: auto;
+  padding-top: 80px;
 }
 
 .nopadding {

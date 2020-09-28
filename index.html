@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nastya Boiko seventh Homework</title>
+    <title>Nastya Boiko eigth Homework</title>
     <!-- <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet"> -->
 
     <link rel="stylesheet" href="./css/main.css" />
@@ -13,41 +13,63 @@
 </head>
 <body>
     <!-- Header-with-nav -->
-    <header  class="page-header">
-        <div class="container ">
-                <nav class="navigation" >
+    <header  class="page-header container">
+        <nav>
+            <div class="logo-container">
+                <a href="./index.html" class="logo-navigation">
+                    <span class="logo-navigation__highlighted">Web</span>Studio </a>
                    
-        <div class="navigation-item">
-            <a href="./index.html" class="logo-navigation">
-                <span class="logo-navigation__highlighted">Web</span>Studio </a>
-    
-            <ul class="nav list">
-            <li class="nav-list ">
-                <a href="./index.html" class="nav-link current">Студия</a>    
-            </li>
-            <li class="nav-list">
-                <a href="./portfolio.html" class="nav-link ">Портфолио</a>
-            </li>
-            <li class="nav-list">
-                <a href="" class="nav-link">Контакты</a>
-            </li>
-        </ul>
-    </div>
+                    <button
+                    type="button"
+                    class="menu-button"
+                    aria-expanded="false"
+                    aria-controls="menu-container"
+                    data-menu-button
+                  >
+                    <svg
+                      width="24"
+                      height="16"
+                      aria-label="Switch mobile menu"
+                    >
+                      <use class="icon-cross" href="./images/sprite.svg#close-menu"></use>
+                      <use class="icon-menu" href="./images/sprite.svg#menu"></use>
+                    </svg>
+                  </button>
 
-        <div class="contacts-upper">
-            <a href="mailto:info@devstudio.com" class="contacts-upper__link">
-            <svg class="contacts-upper__envelope">
-            <use href="./images/sprite.svg#envelope" >
-            </use>
-            </svg>
-            info@devstudio.com </a>
-        <a href="tel:+380961111111" class="contacts-upper__link"> <svg class="contacts-upper__smartphone">
-            <use href="./images/sprite.svg#smartphone"></use> </svg> +38 096 111 11 11</a>
-    </div>
+                    </div>
 
-        </nav>
-        
+        <div class="menu">
+            <div class="navigation">
+               
+                <ul class="nav list">
+                <li class="nav-list ">
+                    <a href="./index.html" class="nav-link current">Студия</a>    
+                </li>
+                <li class="nav-list">
+                    <a href="./portfolio.html" class="nav-link ">Портфолио</a>
+                </li>
+                <li class="nav-list">
+                    <a href="" class="nav-link">Контакты</a>
+                </li>
+            </ul>
         </div>
+    
+            <div class="contacts-upper">
+                <a href="mailto:info@devstudio.com" class="contacts-upper__link">
+                <svg class="contacts-upper__envelope">
+                <use href="./images/sprite.svg#envelope" >
+                </use>
+                </svg>
+                info@devstudio.com </a>
+            <a href="tel:+380961111111" class="contacts-upper__link"> <svg class="contacts-upper__smartphone">
+                <use href="./images/sprite.svg#smartphone"></use> </svg> +38 096 111 11 11</a>
+        </div>
+        </div>
+    
+
+</nav>
+
+       
             </header>
         
 
@@ -340,7 +362,7 @@
         <div class="backdrop is-hidden" data-modal>
             <div class="modal">
                 <button class="modal-btn" data-modal-close>
-                    <svg class="close-icon"> <use href="./images/modal.svg#close">
+                    <svg class="close-icon"> <use href="./images/sprite.svg#close">
                     </use></svg>
                 </button>
                 <h5 class="modal-header">Оставьте свои данные, мы вам перезвоним</h5>
@@ -351,7 +373,7 @@
                     name="name"
                     id="name" placeholder=" ">     
                     <label  class="form-label" for="name">Имя</label>
-                    <span class="modal-icon"><svg class="person-icon"> <use href="./images/modal.svg#person">
+                    <span class="modal-icon"><svg class="person-icon"> <use href="./images/sprite.svg#person">
                     </use></svg></span>
                     </div>
                
@@ -361,7 +383,7 @@
                         name="tel"
                         id="tel" placeholder=" ">
                         <label  class="form-label" for="tel">Телефон</label>
-                        <span class="modal-icon"><svg class="phone-icon"> <use href="./images/modal.svg#phone"></use></svg></span>
+                        <span class="modal-icon"><svg class="phone-icon"> <use href="./images/sprite.svg#phone"></use></svg></span>
 
                         </div>
         
@@ -371,7 +393,7 @@
                 name="mail"
                 id="mail" placeholder=" " >   
                 <label class="form-label" for="mail">Почта</label>
-                <span class="modal-icon"><svg class="email-icon"> <use href="./images/modal.svg#email-black"></use></svg></span>
+                <span class="modal-icon"><svg class="email-icon"> <use href="./images/sprite.svg#email-black"></use></svg></span>
    
                 </div>
               
@@ -397,5 +419,6 @@
         </div>
 
     <script src="./modal.js"></script>
+    <script src="./menu.js"></script>
 </body>
 </html> 
