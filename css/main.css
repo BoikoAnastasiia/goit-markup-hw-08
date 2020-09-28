@@ -1131,10 +1131,6 @@ textarea {
   text-align: center;
 }
 
-.team-card:not(:last-child) {
-  margin-right: 30px;
-}
-
 .team-back {
   background: #F5F4FA;
 }
