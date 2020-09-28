@@ -38,7 +38,8 @@
     letter-spacing: 0.03em;
   }
   
-  .trait-list:not(:last-child) {
-    margin-right: 30px;
+  .traits {
+    width: 100%;
+    display: inline-block;
+    height: auto;
   }
-  
