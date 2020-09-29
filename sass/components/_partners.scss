@@ -1,8 +1,13 @@
 .partners {
     box-sizing: border-box;
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
-    margin-top: 50px;
+    margin: 30px;
+  }
+
+  .mobile-partners {
+    margin: -30px;
   }
   
   .logo-one {
