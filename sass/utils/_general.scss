@@ -51,8 +51,8 @@ button:focus {
 }
 
 .section {
-  padding-bottom: 94px;
-  padding-top: 94px;
+  padding-bottom: 60px;
+  padding-top: 60px;
 }
 
 
@@ -114,10 +114,6 @@ button, select {
   display: flex;
 }
 
-// .wrap {
-//   display: flex;
-//   flex-wrap: wrap;
-// }
 
 h5 {
   color: $primary-white-color;
@@ -133,4 +129,9 @@ h5 {
   text-align: center;
   letter-spacing: 0.03em;
   color: $title-text-color;
+}
+
+
+.nopadding {
+  padding-top: 60px;
 }

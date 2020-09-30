@@ -235,8 +235,8 @@ button:focus {
 }
 
 .section {
-  padding-bottom: 94px;
-  padding-top: 94px;
+  padding-bottom: 60px;
+  padding-top: 60px;
 }
 
 .footer-icon {
@@ -324,6 +324,10 @@ h5 {
   text-align: center;
   letter-spacing: 0.03em;
   color: #212121;
+}
+
+.nopadding {
+  padding-top: 60px;
 }
 
 .page-header {
@@ -515,10 +519,6 @@ h5 {
 
 .navigation {
   padding-top: 60px;
-}
-
-.nopadding {
-  padding-top: 94px;
 }
 
 .footer {

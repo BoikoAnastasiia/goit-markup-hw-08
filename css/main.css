@@ -235,8 +235,8 @@ button:focus {
 }
 
 .section {
-  padding-bottom: 94px;
-  padding-top: 94px;
+  padding-bottom: 60px;
+  padding-top: 60px;
 }
 
 .footer-icon, .team-icon {
@@ -324,6 +324,10 @@ h5 {
   text-align: center;
   letter-spacing: 0.03em;
   color: #212121;
+}
+
+.nopadding {
+  padding-top: 60px;
 }
 
 .logo-navigation, .logo-footer {
@@ -543,10 +547,6 @@ h5 {
 
 .navigation {
   padding-top: 60px;
-}
-
-.nopadding {
-  padding-top: 94px;
 }
 
 .backdrop {
@@ -1010,11 +1010,11 @@ textarea {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  margin: -30px;
+  margin-bottom: -30px;
 }
 
 .mobile-partners {
-  margin-top: 30px;
+  margin-top: 60px;
 }
 
 .logo-one {
@@ -1056,7 +1056,7 @@ textarea {
 .partner-list {
   width: calc((100% - 30px) / 2);
   height: 90px;
-  margin: 30px;
+  margin-bottom: 30px;
 }
 
 .logo-link {
