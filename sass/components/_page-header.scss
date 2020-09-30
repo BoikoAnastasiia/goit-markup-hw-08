@@ -1,28 +1,35 @@
 
 .page-header {
-  // padding-top: 32px;
-  // padding-bottom: 32px;
+
   border-bottom: 1px solid #ECECEC;
-  min-width: 60px;
-  
-  // &.flexbox {
-  //   justify-content: flex-end;
-  //   align-items: center;
-  // }
   position: relative;
+  height: 60px;
+   
+
+  @include for-size(tablet) {
+    height: 80px;
+  }
+  
+}
+
+
+.tablet {
+  @include for-size(tablet) {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
 }
 
 .logo-container {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  min-height: 80px;
 }
 
 .nav {
   @include font(14px, 1.18, 500);
   display: inline-block;
-  // display: flex;
   text-align: center;
   padding-right: auto;
   color: $title-text-color;
@@ -34,12 +41,25 @@
   & .nav-link:focus {
     color: $accent-color;
   }
+
+  @include for-size(tablet) {
+    display: flex;
+    align-items: center;
+    padding-right: 0;
+    border-bottom: 0;
+}
 }
 
 .nav-list:not(:last-child) { 
       margin-bottom: 40px;
-  }
 
+      @include for-size(tablet) {
+        margin-bottom: 0;
+        margin-right: 50px;
+      }
+
+  }
+  
 .menu {
   text-align: center;
   background: $primary-white-color;
@@ -47,6 +67,12 @@
   0px 2px 4px rgba(0, 0, 0, 0.08), 
   0px 1px 3px rgba(0, 0, 0, 0.16);
   z-index: 5;
+
+  @include for-size(tablet) {
+    box-shadow: none;
+    align-items: center;
+  }
+
  
 @media screen and (max-width: 767px) {
     display: none;
@@ -67,14 +93,6 @@
   }
 }
 
-// .nav-list:not(:last-child) { 
-//     margin-right: 50px;
-// }
-
-// .navigation-item {
-//   display: flex;
-//   align-items: center;
-// }
 
 .nav-link {
   color: $title-text-color;
@@ -84,11 +102,7 @@
 }
 
 .contacts-upper {
-  // display: flex;
-  // align-items: center;
-  // align-content: space-between;
-  // justify-content: flex-end;
-  padding-top: 60px;
+   padding-top: 60px;
   letter-spacing: 0.02em;
 
     &__envelope {
@@ -101,7 +115,18 @@
       width: 10px; 
       height: 16px;
       fill: currentColor;
-      }
+    }
+
+    @include for-size(tablet) {
+      padding-top: 0;
+    }
+
+    @include for-size(desktop) {
+        display: flex;
+        align-items: center;
+        align-content: space-between;
+        justify-content: flex-end;
+    }
 }
 
 .menu-button {
@@ -139,12 +164,21 @@
   text-decoration: none;
   transition: 250ms $timing;
   display: block;
-  // align-items: center;
 
 
     &:last-child {
       margin-top: 16px;
       padding-bottom: 60px;
+
+      @include for-size(tablet) {
+        margin-top: 10px;
+        padding-bottom: 0;
+      }
+
+      @include for-size(desktop) {
+         margin-left: 30px;
+         margin-top: 0;
+      }
     }
 
     &:hover,
@@ -158,11 +192,7 @@
     &:focus .contacts-upper__smartphone {
       fill: $accent-color;
     }
-
-    // &:not(:last-child) {
-    //   margin-right: 30px;
-    // }
-}
+  }
 
 .contacts-upper__envelope, 
 .contacts-upper__smartphone {
@@ -196,5 +226,10 @@
   // align-items: center;
   // margin-right: auto;
   padding-top: 60px;
+  
+  @include for-size(tablet) {
+    padding-top: 0;
+
+  }
 
 }

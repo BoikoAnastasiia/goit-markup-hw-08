@@ -66,19 +66,14 @@ button:focus {
  }
 
 .container {
-  // width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
-  // margin-right: auto;
-  // margin-left: auto;
-  
  
-  @media screen and (min-width: 768px) {
-    width: 768px;
-  }
-
-  @media screen and (min-width: 1140px) {
-    width: 1140px;
+  
+  @include for-size(desktop) {
+  margin-right: auto;
+  margin-left: auto;
+  width: 1200px;
   }
 }
 
