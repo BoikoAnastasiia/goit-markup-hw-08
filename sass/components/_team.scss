@@ -1,5 +1,3 @@
-
-
 .team-icon {
   @extend %icon;
   fill: #AFB1B8;
@@ -27,12 +25,12 @@
     &:hover {
       background-color: $accent-color;
 
-      &.team-icon {
+      & .team-icon {
         fill: $primary-white-color;
       }
   }
 
-   
+ 
 }
 
 .team-names {
@@ -55,7 +53,7 @@
 }
 
 .team-back {
-  background: #F5F4FA;
+  background: $secondary-background-color;
 }
 
 .team-description {
