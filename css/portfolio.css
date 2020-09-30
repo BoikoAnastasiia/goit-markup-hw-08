@@ -760,7 +760,7 @@ h5 {
 }
 
 .portfolio-container {
-  padding-bottom: 90px;
+  padding-bottom: 60px;
 }
 
 .portfolio-description {
@@ -778,13 +778,14 @@ h5 {
 .portfolio-card {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  width: calc((100% - 30px*2) / 3);
   background: #FFFFFF;
   border: 1px solid #EEEEEE;
-  margin-right: 30px;
-  margin-bottom: 30px;
   position: relative;
   overflow: hidden;
+}
+
+.portfolio-card img {
+  width: 100%;
 }
 
 .portfolio-card:hover {
@@ -797,13 +798,10 @@ h5 {
   cursor: pointer;
 }
 
-.portfolio-card:nth-child(3n) {
-  margin-right: 0;
-}
-
 .card-thumb {
   position: relative;
   overflow: hidden;
+  width: 100%;
 }
 
 .card-thumb::before {
