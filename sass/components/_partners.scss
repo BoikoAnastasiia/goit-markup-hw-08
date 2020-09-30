@@ -3,11 +3,11 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    margin: 30px;
+    margin: -30px;
   }
 
   .mobile-partners {
-    margin: -30px;
+    margin-top: 30px;
   }
   
   .logo-one {
@@ -47,13 +47,14 @@
   }
   
   .partner-list {
-    margin: 0;
-    width: calc((100% - 30px * 5) / 6);
+    width: calc((100% - 30px) / 2);
     height: 90px;
+    margin: 30px;
 
-    &:last-child {
-      margin-right: 0px;
-    }
+
+    // &:last-child {
+    //   margin-right: 0px;
+    // }
   }
   
   .logo-link {
