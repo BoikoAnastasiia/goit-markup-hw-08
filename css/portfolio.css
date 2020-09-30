@@ -698,18 +698,19 @@ h5 {
   padding-top: 90px;
 }
 
-.filter .flexbox {
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-
 .filter-header {
   color: #212121;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin-bottom: -15px;
 }
 
 .filter-btn {
   margin-right: 8px;
+  margin-bottom: 15px;
 }
 
 .btn-secondary {
