@@ -1,12 +1,13 @@
 
 .page-header {
-
+display: inline-flex;
   border-bottom: 1px solid #ECECEC;
   position: relative;
   height: 60px;
-   
+  align-items: center;
+  width: 100%;
 
-  @include for-size(tablet) {
+     @include for-size(tablet) {
     height: 80px;
   }
   
@@ -14,6 +15,10 @@
 
 
 .tablet {
+  position: relative;
+  width: 100%;
+
+
   @include for-size(tablet) {
     display: flex;
     align-items: center;
@@ -35,7 +40,7 @@
   color: $title-text-color;
   text-decoration: none;
   transition: 250ms $timing;
-  border-bottom: 1px solid#ECECEC;;
+  border-bottom: 1px solid #ECECEC;
 
   & .nav-link:hover,
   & .nav-link:focus {
@@ -67,6 +72,8 @@
   0px 2px 4px rgba(0, 0, 0, 0.08), 
   0px 1px 3px rgba(0, 0, 0, 0.16);
   z-index: 5;
+  width: 100%;
+
 
   @include for-size(tablet) {
     box-shadow: none;
@@ -125,7 +132,8 @@
         display: flex;
         align-items: center;
         align-content: space-between;
-        justify-content: flex-end;
+        // justify-content: flex-end;
+        padding-right: auto;
     }
 }
 
@@ -135,6 +143,10 @@
   padding: 0;
   border: none;
   background-color: transparent;
+  padding-left: auto;
+  // position: absolute;
+  top: 0;
+  right: 0;
 
   &:focus .icon-cross,
   &:focus .icon-menu {
@@ -216,6 +228,11 @@
     background: $accent-color;
     border-radius: 2px;
     position: absolute;
+
+    @include for-size(tablet) {
+      bottom: -32px;
+    }
+    
   }
   
 }
