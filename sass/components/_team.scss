@@ -54,6 +54,11 @@
 
 .team-back {
   background: $secondary-background-color;
+  margin-top: 60px;
+
+  @include for-size(desktop) {
+    margin-top: 90px;
+  }
 }
 
 .team-description {

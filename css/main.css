@@ -1277,6 +1277,13 @@ textarea {
 
 .team-back {
   background: #F5F4FA;
+  margin-top: 60px;
+}
+
+@media (min-width: 1200px) {
+  .team-back {
+    margin-top: 90px;
+  }
 }
 
 .team-description {
@@ -1314,6 +1321,15 @@ textarea {
   background-size: 70px;
 }
 
+@media (min-width: 768px) {
+  .trait-list {
+    width: calc((100% - 30px) / 2);
+  }
+  .trait-list:nth-child(2n) {
+    margin-left: 30px;
+  }
+}
+
 .anthena::before {
   background-image: url(../images/Anthena.svg);
 }
@@ -1343,6 +1359,16 @@ textarea {
   width: 100%;
   display: inline-block;
   height: auto;
+}
+
+@media (min-width: 768px) {
+  .tablet-traits {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
 }
 
 .wedo {
