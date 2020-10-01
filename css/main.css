@@ -1330,6 +1330,18 @@ textarea {
   }
 }
 
+@media (min-width: 1200px) {
+  .trait-list {
+    width: calc((100% - 30px * 3) / 4);
+  }
+  .trait-list:nth-child(2n) {
+    margin-left: 0px;
+  }
+  .trait-list:not(:last-child) {
+    margin-right: 30px;
+  }
+}
+
 .anthena::before {
   background-image: url(../images/Anthena.svg);
 }
