@@ -314,6 +314,7 @@ h5 {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   margin: 0px;
+  text-align: left;
 }
 
 .second-header {
@@ -668,6 +669,15 @@ h5 {
   text-align: center;
 }
 
+@media (min-width: 1200px) {
+  .footer-mobile {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+}
+
 .footer-social {
   -webkit-box-align: center;
       -ms-flex-align: center;
@@ -704,12 +714,23 @@ h5 {
           flex-direction: column;
 }
 
+@media (min-width: 768px) {
+  .contacts-footer-container {
+    margin-right: 165px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .contacts-footer-container {
+    margin-right: 70px;
+  }
+}
+
 .footer-social .footer-list:not(:last-child) {
   margin-right: 10px;
 }
 
 .footer-follow {
-  width: 100%;
   margin-top: 60px;
 }
 
@@ -740,6 +761,27 @@ h5 {
   fill: #ffffff;
 }
 
+@media (min-width: 768px) {
+  .footer-follow {
+    margin-top: 0;
+  }
+}
+
+@media (min-width: 768px) {
+  .footer-tablet {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
 .subscribe-input {
   border: 1px solid rgba(255, 255, 255, 0.3);
   -webkit-box-sizing: border-box;
@@ -747,7 +789,7 @@ h5 {
   -webkit-filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
           filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
   border-radius: 4px;
-  width: 100%;
+  width: 450px;
   height: 50px;
   margin-top: 20px;
   padding-left: 16px;
@@ -756,12 +798,31 @@ h5 {
   background-color: #2F303A;
 }
 
+@media (min-width: 1200px) {
+  .subscribe-input {
+    width: 358px;
+  }
+}
+
 .subscribe-container {
   margin-top: 60px;
 }
 
+@media (min-width: 1200px) {
+  .subscribe-container {
+    margin-top: 0;
+    margin-left: 93px;
+  }
+}
+
 .subscribe-form .btn-primary {
   margin-top: 20px;
+}
+
+@media (min-width: 1200px) {
+  .subscribe-form .btn-primary {
+    margin-left: 12px;
+  }
 }
 
 .subscribe-form .btn-primary::after {
@@ -774,6 +835,21 @@ h5 {
   height: 24px;
   content: "";
   margin-left: 10px;
+}
+
+@media (min-width: 1200px) {
+  .subscribe-desktop {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
+  }
 }
 
 .logo-navigation, .logo-footer {
