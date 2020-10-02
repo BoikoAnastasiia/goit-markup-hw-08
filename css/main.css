@@ -1486,6 +1486,7 @@ textarea {
 
 @media (min-width: 480px) {
   .whatwedo {
+    display: none;
     position: absolute;
     width: 1px;
     height: 1px;
