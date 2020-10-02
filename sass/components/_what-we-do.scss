@@ -1,4 +1,13 @@
 
+  .whatwedo {
+    @include for-size(mobile) {
+      display: none;
+    }
+      @include for-size(desktop){
+      display: block;
+    }
+  }
+  
   .wedo {
     align-content: space-between;
     & li:nth-child(-n + 2) {

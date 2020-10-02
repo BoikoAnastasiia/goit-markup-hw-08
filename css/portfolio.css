@@ -314,7 +314,13 @@ h5 {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   margin: 0px;
-  text-align: left;
+  text-align: center;
+}
+
+@media (min-width: 1200px) {
+  h5 {
+    text-align: left;
+  }
 }
 
 .second-header {

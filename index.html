@@ -117,21 +117,40 @@
     <!-- <section>
 
     <!-- what we do -->
-    <section class="section hidden">
+    <section class="section whatwedo">
         <div class="container ">
         <h2 class="second-header">Чем мы занимаемся</h2>
        <div>
         <ul class="list flexbox wedo">
             <li>
                <div class=" overlay">
-                <img src="./images/box1.jpg" width="370" alt="texting"> 
+                <picture>
+                    <source 
+                    srcset="
+                    ./images/desktop/desctop.webp 1x, 
+                    ./images/desktop/desctop@2x.webp 2x
+                    " 
+                    type="image/webp" 
+                    />
+
+                    <img 
+                    srcset=" 
+                    ./images/desktop/desctop.jpg 1x, 
+                    ./images/desktop/desctop@2x.jpg 2x"  
+                    src="./images/desktop/desctop.jpg" width="370" alt="desktop apps" 
+                    />
+                </picture>
+
                 <p class="overlay-text">Десктопные приложения</p>
             </div>
         </li>
 
             <li>
                 <div class="overlay">
-                <img src="./images/box2.jpg" width="370" alt="collation">
+                    <picture>
+                        <source srcset="./images/desktop/desctop.jpg 1x, ./images/desktop/desctop@2x.jpg  2x" media="(min-width: 1200px)" />
+                        <img src="./images/desktop/desctop.jpg" width="370" alt="texting"> 
+                    </picture>
                 <p class="overlay-text">Мобильные приложения</p>
         </div>
             </li>

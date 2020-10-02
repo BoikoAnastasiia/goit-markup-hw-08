@@ -120,7 +120,11 @@ h5 {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   margin: 0px;
-  text-align: left;
+  text-align: center;
+
+  @include for-size(desktop) {
+    text-align: left;
+  }
 }
 
 .second-header {
