@@ -27,6 +27,7 @@
 }
   @include for-size(desktop) {
     width: calc((100% - 30px * 3) / 4);
+    
     &:nth-child(2n) {
       margin-left: 0px;
   }
