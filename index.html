@@ -128,7 +128,7 @@
                     <source 
                     srcset="
                     ./images/desktop/desctop.webp 1x, 
-                    ./images/desktop/desctop@2x.webp 2x
+                    ./images/desktop/desctop_2x.webp 2x
                     " 
                     type="image/webp" 
                     />
@@ -148,16 +148,42 @@
             <li>
                 <div class="overlay">
                     <picture>
-                        <source srcset="./images/desktop/desctop.jpg 1x, ./images/desktop/desctop@2x.jpg  2x" media="(min-width: 1200px)" />
-                        <img src="./images/desktop/desctop.jpg" width="370" alt="texting"> 
+                        <source 
+                        srcset="
+                        ./images/desktop/mobile.webp 1x, 
+                        ./images/desktop/mobile_2x.webp 2x
+                        " 
+                        type="image/webp" 
+                        />
+    
+                        <img 
+                        srcset=" 
+                        ./images/desktop/mobile.jpg 1x, 
+                        ./images/desktop/mobile@2x.jpg 2x"  
+                        src="./images/desktop/mobile.jpg" width="370" alt="mobile apps" 
+                        />
                     </picture>
                 <p class="overlay-text">Мобильные приложения</p>
         </div>
             </li>
             <li>
                 <div class="overlay">
-                <img src="./images/box3.jpg" width="370" alt="choosing palette">
-                <p class="overlay-text">Дизайнерские решения</p> </div>
+                    <picture>
+                        <source 
+                        srcset="
+                        ./images/desktop/design.webp 1x, 
+                        ./images/desktop/design_2x.webp 2x
+                        " 
+                        type="image/webp" 
+                        />
+    
+                        <img 
+                        srcset=" 
+                        ./images/desktop/design.jpg 1x, 
+                        ./images/desktop/design@2x.jpg 2x"  
+                        src="./images/desktop/design.jpg" width="370" alt="colorful palette" 
+                        />
+                    </picture>                <p class="overlay-text">Дизайнерские решения</p> </div>
             </li>
         </ul>
     </div>
