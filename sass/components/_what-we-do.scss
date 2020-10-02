@@ -1,9 +1,22 @@
 
   .whatwedo {
     @include for-size(mobile) {
-      display: none;
-    }
+      position: absolute;
+      width: 1px;
+      height: 1px;
+      margin: -1px;
+      border: 0;
+      padding: 0;
+      clip: rect(0 0 0 0);
+      overflow: hidden;
+        }
       @include for-size(desktop){
+        position: relative;
+        width: auto;
+        height: auto;
+        margin: 0;
+        clip: auto;
+        overflow: visible ;
       display: block;
     }
   }
