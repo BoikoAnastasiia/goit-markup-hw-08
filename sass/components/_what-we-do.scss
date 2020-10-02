@@ -23,6 +23,10 @@
     @media screen and (max-width: 1999px) {
       display: none;
     }
+
+    @include for-size(desktop) {
+      display: block;
+    }
   }
   
   .wedo {
