@@ -196,8 +196,40 @@
             <h2 class="second-header">Наша команда</h2>
             <ul class="list list-cards" >
                 <li class=" team-card ">
-                    <img src="./images/igor.jpg" alt="Igor Demyanenko photo">
-                    <h4 class="team-names">Игорь Демьяненко</h4>
+                    <picture>
+                        <source 
+                        srcset="
+                        ./images/desktop/igor.webp 1x, 
+                        ./images/desktop/igor_2x.webp 2x
+                        " 
+                        type="image/webp" media="(min-width: 1200px)"
+                        />
+    
+                        <source 
+                        srcset="
+                        ./images/tablet/igor.webp 1x, 
+                        ./images/tablet/igor_2x.webp 2x
+                        " 
+                        type="image/webp" media="(min-width: 768px)"
+                        />
+    
+                        <source 
+                        srcset="
+                        ./images/mobile/igor.webp 1x, 
+                        ./images/mobile/igor_2x.webp 2x
+                        " 
+                        type="image/webp" media="(max-width: 767px)" 
+                        />
+    
+                       <img src="./images/team/desktop/img3.jpg" width="370" height="346" alt="Igor" />
+
+                        
+
+                      
+
+
+                    </picture>
+                     <h4 class="team-names">Игорь Демьяненко</h4>
                     <span class="team-description">Product Designer</span>
             <ul class="list flexbox social">
             <li class="social-list"><a class="social-link" href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer" aria-label="Instagram address">
