@@ -1176,8 +1176,8 @@ textarea {
       -ms-flex-direction: column;
           flex-direction: column;
   background-color: #2F303A;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/background_team.jpg);
-  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/background_team.jpg);
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#2f303a66), to(rgba(47, 48, 58, 0.4))), url(../images/mobile/Header_img.webp), url(../images/mobile/Header_img.jpg);
+  background-image: linear-gradient(#2f303a66, rgba(47, 48, 58, 0.4)), url(../images/mobile/Header_img.webp), url(../images/mobile/Header_img.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   color: #ffffff;
@@ -1194,12 +1194,48 @@ textarea {
           justify-content: center;
 }
 
+@media screen and (min-device-pixel-ratio: 2), screen and (-webkit-min-device-pixel-ratio: 2), screen and (min-resolution: 192dpi), screen and (min-resolution: 2dppx) {
+  .hero {
+    background-image: url(..images/mobile/Header_img@2x), url(../images/mobile/Header_img@2x.jpg);
+  }
+}
+
+@media (min-width: 768px) {
+  .hero {
+    background-image: url(../images/tablet/Header_img.webp), url(../images/tablet/Header_img.jpg);
+  }
+}
+
+@media screen and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (min-resolution: 2dppx) {
+  .hero {
+    background-image: url(../images/tablet/Header_img@2x.webp), url(../images/tablet/Header_img@2x.jpg);
+  }
+}
+
+@media (min-width: 1200px) {
+  .hero {
+    background-image: url(../images/desktop/bcg.webp), url(../images/desktop/bcg.jpg);
+  }
+}
+
+@media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (min-resolution: 192dpi), screen and (min-width: 1200px) and (min-resolution: 2dppx) {
+  .hero {
+    background-image: url(../images/desktop/bcg_2x.webp), url(../images/desktop/bcg@2x.jpg);
+  }
+}
+
 .hero-header {
   font-weight: 900;
-  font-size: 10 rem;
+  font-size: 26px;
   letter-spacing: 0.06em;
   text-transform: uppercase;
   text-align: center;
+}
+
+@media (min-width: 1200px) {
+  .hero-header {
+    font-size: 44px;
+  }
 }
 
 .partners {
