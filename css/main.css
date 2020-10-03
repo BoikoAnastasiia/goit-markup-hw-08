@@ -1267,6 +1267,12 @@ textarea {
   }
 }
 
+@media (min-width: 1200px) {
+  .mobile-partners {
+    margin-bottom: 60px;
+  }
+}
+
 .logo-one {
   width: 44px;
   height: 49px;
@@ -1403,6 +1409,16 @@ textarea {
   width: 100%;
 }
 
+@media (min-width: 768px) {
+  .list-cards {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+}
+
 .team-names {
   color: #212121;
   font-size: 16px;
@@ -1419,15 +1435,28 @@ textarea {
           box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
   text-align: center;
-  width: 100%;
 }
 
 @media (min-width: 768px) {
   .team-card {
     width: calc((100% - 30px) / 2);
+    margin-bottom: 30px;
   }
-  .team-card:nth-child(2n) {
-    margin-left: 30px;
+  .team-card:nth-child(odd) {
+    margin-right: 30px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .team-card {
+    width: calc((100% - 30px * 3) / 4);
+    margin-bottom: 0;
+  }
+  .team-card:nth-child(odd) {
+    margin-right: 0;
+  }
+  .team-card:not(:last-child) {
+    margin-right: 30px;
   }
 }
 

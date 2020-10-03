@@ -34,6 +34,12 @@
 
 .list-cards {
   width: 100%;
+  
+  @include for-size(tablet) {
+   
+  display: flex;
+  flex-wrap: wrap;
+  }
 }
 
 .team-names {
@@ -50,21 +56,30 @@
   border-radius: 0px 0px 4px 4px;
   text-align: center;
 
-  width: 100%;
-
-  // &:not(:last-child) {
-  //   margin-right: 30px;
-  // }
+  
 
 
   @include for-size(tablet) {
     width: calc((100% - 30px) / 2);
 
-    &:nth-child(2n) {
-      margin-left: 30px;
+    &:nth-child(odd) {
+      margin-right: 30px;
+   }
+    margin-bottom: 30px;
+  
   }
+  @include for-size(desktop) {
+    width: calc((100% - 30px * 3) / 4);
+    margin-bottom: 0;
+
+    &:nth-child(odd) {
+      margin-right: 0;
+   }
+    &:not(:last-child) {
+        margin-right: 30px;
+      }
+      }
   }
-}
 
 .team-pic {
   width: 100%;
