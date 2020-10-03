@@ -11,17 +11,30 @@
 
 
 .filter {
-  padding-bottom: 50px;
+  padding-bottom: 40px;
   padding-top: 90px;
-
+  @include for-size(tablet) {
+    padding-bottom: 30px;
+  }
    
     &-header {
       color: $title-text-color;
       justify-content: flex-start; 
       flex-wrap: wrap;
       margin-bottom: -15px;
+
+      @include for-size(tablet) {
+      justify-content: center;
+      margin-bottom: 0;
+
     }
-    
+
+    @include for-size(desktop) {
+      margin-bottom: 50px;
+    }
+  }
+
+
     &-btn {
       margin-right: 8px;
       margin-bottom: 15px;
@@ -69,6 +82,9 @@
   
   .portfolio-container {
     padding-bottom: 60px;
+    @include for-size(desktop) {
+      padding-bottom: 120px;
+    }
   }
   
   .portfolio-description {
@@ -117,7 +133,6 @@
     @include for-size(desktop) {
       width: calc((100% - 30px * 2) / 3);
       margin-right: 30px;
-      margin-bottom: 30px;
 
      &:nth-child(2n) {
         margin-left: 0;

@@ -887,8 +887,14 @@ h5 {
 }
 
 .filter {
-  padding-bottom: 50px;
+  padding-bottom: 40px;
   padding-top: 90px;
+}
+
+@media (min-width: 768px) {
+  .filter {
+    padding-bottom: 30px;
+  }
 }
 
 .filter-header {
@@ -899,6 +905,21 @@ h5 {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   margin-bottom: -15px;
+}
+
+@media (min-width: 768px) {
+  .filter-header {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-bottom: 0;
+  }
+}
+
+@media (min-width: 1200px) {
+  .filter-header {
+    margin-bottom: 50px;
+  }
 }
 
 .filter-btn {
@@ -956,6 +977,12 @@ h5 {
   padding-bottom: 60px;
 }
 
+@media (min-width: 1200px) {
+  .portfolio-container {
+    padding-bottom: 120px;
+  }
+}
+
 .portfolio-description {
   color: #757575;
   font-size: 16px;
@@ -1007,7 +1034,6 @@ h5 {
   .portfolio-card {
     width: calc((100% - 30px * 2) / 3);
     margin-right: 30px;
-    margin-bottom: 30px;
   }
   .portfolio-card:nth-child(2n) {
     margin-left: 0;
