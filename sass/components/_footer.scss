@@ -62,6 +62,7 @@
   margin-right: 165px;
   }
   @include for-size(desktop) {
+    text-align: left;
     margin-right: 70px;
     }
   
@@ -116,13 +117,16 @@
   box-sizing: border-box;
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
   border-radius: 4px;
-  width: 450px;
+  width: 92vw;
   height: 50px;
   margin-top: 20px;
   padding-left: 16px;
-  margin-right: 12px;
   color: $primary-white-color;
   background-color: $footer-color;
+
+  @include for-size(tablet) {
+    width: 450px;
+  }
 
   @include for-size(desktop) {
     width: 358px;
