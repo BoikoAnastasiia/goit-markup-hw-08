@@ -72,7 +72,7 @@ display: inline-flex;
   0px 2px 4px rgba(0, 0, 0, 0.08), 
   0px 1px 3px rgba(0, 0, 0, 0.16);
   z-index: 1;
-  width: 100%;
+  width: 100vw;
 
 
   @include for-size(tablet) {
@@ -85,8 +85,8 @@ display: inline-flex;
     display: none;
     position: absolute;
     top: 100%;
-    left: 0;
-    width: 100%;
+    left: -15px;
+    width: 100vw;
 
     &.is-open {
       display: block;
@@ -132,7 +132,6 @@ display: inline-flex;
         display: flex;
         align-items: center;
         align-content: space-between;
-        // justify-content: flex-end;
         padding-right: auto;
     }
 }
@@ -144,7 +143,6 @@ display: inline-flex;
   border: none;
   background-color: transparent;
   padding-left: auto;
-  // position: absolute;
   top: 0;
   right: 0;
 
@@ -238,10 +236,7 @@ display: inline-flex;
 
 
 .navigation {
-  // display: flex;
-  // align-items: center;
-  // margin-right: auto;
-  padding-top: 60px;
+    padding-top: 60px;
   
   @include for-size(tablet) {
     padding-top: 0;

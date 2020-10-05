@@ -29,15 +29,15 @@
     opacity: 1;
     transform: translate(-50%, -50%) scale(1);
     transition: opacity 250ms $timing 0s, transform 250ms $timing 0s;
-    padding-left: 15px;
-    padding-right: 15px;
+    padding-left: 40px;
+    padding-right: 40px;
     padding-top: 93px;
 
     @include for-size(tablet) {
       width: 450px;
     }
 
-    @include for-size(tablet) {
+    @include for-size(desktop) {
       width: 528px;
     }
   }
