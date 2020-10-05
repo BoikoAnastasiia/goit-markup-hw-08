@@ -887,12 +887,6 @@ textarea {
 
 .form-checked {
   text-align: center;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
 }
 
 .agreement {
@@ -903,7 +897,7 @@ textarea {
   letter-spacing: 0.03em;
   color: #757575;
   position: relative;
-  display: block;
+  text-align: center;
 }
 
 @media (min-width: 1200px) {

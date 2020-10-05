@@ -171,9 +171,7 @@
   
   .form-checked {
     text-align: center;
-   display: flex;
-   justify-content: space-between;
-  }
+    }
   
   .agreement {
     @include font(12px, 1.7);
@@ -181,7 +179,7 @@
     letter-spacing: 0.03em;
     color: $primarily-text-color;
     position: relative;
-    display: block;
+    text-align: center;
 
 
 
