@@ -830,19 +830,7 @@ textarea:focus {
   transition: 350ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.checkbox-box {
-  position: absolute;
-  width: 16px;
-  height: 15px;
-  -webkit-box-shadow: 0 0 0 2px #212121;
-          box-shadow: 0 0 0 2px #212121;
-  left: 0;
-  top: 1px;
-  border-radius: 2px;
-  background-color: #ffffff;
-}
-
-.checked-input:checked ~ .checkbox-box {
+.checked-input:checked ~ .checkbox-box::before {
   background-color: #2196F3;
   background-image: url(../images/check.svg);
   background-color: #2196F3;
@@ -850,7 +838,7 @@ textarea:focus {
   background-repeat: no-repeat;
 }
 
-.checked-input:focus ~ .checkbox-box {
+.checked-input:focus ~ .checkbox-box::before {
   -webkit-box-shadow: 0 0 0 2px #2196F3;
           box-shadow: 0 0 0 2px #2196F3;
 }
@@ -882,7 +870,7 @@ textarea {
 
 .agreement-bold {
   font-style: normal;
-  font-size: 14px;
+  font-size: 12px;
   line-height: 1.7;
   font-weight: 400;
   letter-spacing: 0.03em;
@@ -891,19 +879,51 @@ textarea {
   color: #2196F3;
 }
 
+@media (min-width: 1200px) {
+  .agreement-bold {
+    font-size: 14px;
+  }
+}
+
 .form-checked {
   text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .agreement {
-  font-size: 14px;
+  font-size: 12px;
   line-height: 1.7;
   font-weight: 400;
   font-style: normal;
   letter-spacing: 0.03em;
   color: #757575;
   position: relative;
-  padding-left: 25px;
+  display: block;
+}
+
+@media (min-width: 1200px) {
+  .agreement {
+    font-size: 14px;
+    text-align: center;
+  }
+}
+
+.checkbox-box::before {
+  content: "";
+  margin-right: 8px;
+  width: 16px;
+  height: 15px;
+  -webkit-box-shadow: 0 0 0 2px #212121;
+          box-shadow: 0 0 0 2px #212121;
+  border-radius: 2px;
+  background-color: #ffffff;
+  vertical-align: middle;
+  display: inline-block;
 }
 
 .agreement-text {

@@ -120,18 +120,9 @@
     transition: 350ms $timing;
   }
   
-  .checkbox-box {
-    position: absolute;
-    width: 16px;
-    height: 15px;
-    box-shadow: 0 0 0 2px $title-text-color;
-    left: 0;
-    top: 1px;
-    border-radius: 2px;
-    background-color: $primary-white-color;
-   }
   
-   .checked-input:checked ~ .checkbox-box {
+  
+   .checked-input:checked ~ .checkbox-box::before {
     background-color: $accent-color;
     background-image: url(../images/check.svg);
     background-color: $accent-color;
@@ -139,7 +130,7 @@
     background-repeat: no-repeat;
   }
   
-  .checked-input:focus ~ .checkbox-box {
+  .checked-input:focus ~ .checkbox-box::before {
     box-shadow: 0 0 0 2px $accent-color;
     }
   
@@ -168,25 +159,50 @@
   
   .agreement-bold {
     font-style: normal;
-    @include font(14px, 1.7);
+    @include font(12px, 1.7);
     letter-spacing: 0.03em;
     text-decoration-line: underline;
     color: $accent-color;
+
+    @include for-size(desktop) {
+      font-size: 14px;
+      }
   }
   
   .form-checked {
     text-align: center;
+   display: flex;
+   justify-content: space-between;
   }
   
   .agreement {
-    @include font(14px, 1.7);
+    @include font(12px, 1.7);
     font-style: normal;
     letter-spacing: 0.03em;
     color: $primarily-text-color;
     position: relative;
-    padding-left: 25px;
+    display: block;
+
+
+
+    @include for-size(desktop) {
+    font-size: 14px;
+    text-align: center;
+
+    }
    }
-  
+
+   .checkbox-box::before {
+    content: "";
+     margin-right: 8px;
+     width: 16px;
+     height: 15px;
+     box-shadow: 0 0 0 2px $title-text-color;
+     border-radius: 2px;
+     background-color: $primary-white-color;
+     vertical-align: middle;
+     display: inline-block;
+    }
   
   .agreement-text {
     font-style: normal;
